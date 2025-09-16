@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="email" optional="NO" attributeType="String"/>
+        <attribute name="displayName" optional="YES" attributeType="String"/>
+        <attribute name="locale" optional="YES" attributeType="String"/>
+        <attribute name="currencyCode" optional="YES" attributeType="String"/>
+        <attribute name="companyName" optional="YES" attributeType="String"/>
+        <attribute name="companyAddress" optional="YES" attributeType="String"/>
+        <attribute name="taxId" optional="YES" attributeType="String"/>
+        <attribute name="iban" optional="YES" attributeType="String"/>
+        <attribute name="bankName" optional="YES" attributeType="String"/>
+        <attribute name="logoData" optional="YES" attributeType="Binary"/>
+        <relationship name="documents" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Document" inverseName="owner" inverseEntity="Document"/>
+    </entity>
+    <entity name="Client" representedClassName="Client" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="NO" attributeType="String"/>
+        <attribute name="contactEmail" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="taxId" optional="YES" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <relationship name="documents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Document" inverseName="client" inverseEntity="Document"/>
+    </entity>
+    <entity name="InventoryItem" representedClassName="InventoryItem" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="NO" attributeType="String"/>
+        <attribute name="sku" optional="YES" attributeType="String"/>
+        <attribute name="unit" optional="YES" attributeType="String"/>
+        <attribute name="unitPrice" optional="NO" attributeType="Decimal" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="taxRate" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <relationship name="lineItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LineItem" inverseName="inventoryItem" inverseEntity="LineItem"/>
+    </entity>
+    <entity name="Document" representedClassName="Document" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="number" optional="NO" attributeType="String"/>
+        <attribute name="issueDate" optional="NO" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dueDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="NO" attributeType="String"/>
+        <attribute name="currencyCode" optional="YES" attributeType="String"/>
+        <attribute name="discount" optional="YES" attributeType="Decimal" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="subtotal" optional="YES" attributeType="Decimal" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="taxTotal" optional="YES" attributeType="Decimal" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="total" optional="YES" attributeType="Decimal" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="language" optional="YES" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="projectName" optional="YES" attributeType="String"/>
+        <attribute name="siteAddress" optional="YES" attributeType="String"/>
+        <attribute name="paymentTerms" optional="YES" attributeType="String"/>
+        <attribute name="validityDays" optional="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <attribute name="retentionPercent" optional="YES" attributeType="Double" usesScalarValueType="YES"/>
+        <relationship name="client" optional="YES" toMany="NO" minCount="0" maxCount="1" deletionRule="Nullify" destinationEntity="Client" inverseName="documents" inverseEntity="Client"/>
+        <relationship name="owner" optional="YES" toMany="NO" minCount="0" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="documents" inverseEntity="User"/>
+        <relationship name="lineItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="LineItem" inverseName="document" inverseEntity="LineItem"/>
+    </entity>
+    <entity name="LineItem" representedClassName="LineItem" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="NO" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="itemDescription" optional="NO" attributeType="String"/>
+        <attribute name="quantity" optional="NO" attributeType="Decimal" defaultValueString="1" usesScalarValueType="NO"/>
+        <attribute name="unit" optional="YES" attributeType="String"/>
+        <attribute name="unitPrice" optional="NO" attributeType="Decimal" defaultValueString="0" usesScalarValueType="NO"/>
+        <attribute name="taxRate" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="discount" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="position" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="document" optional="YES" toMany="NO" minCount="0" maxCount="1" deletionRule="Nullify" destinationEntity="Document" inverseName="lineItems" inverseEntity="Document"/>
+        <relationship name="inventoryItem" optional="YES" toMany="NO" minCount="0" maxCount="1" deletionRule="Nullify" destinationEntity="InventoryItem" inverseName="lineItems" inverseEntity="InventoryItem"/>
+    </entity>
+    <elements>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="128"/>
+        <element name="Client" positionX="120" positionY="-18" width="128" height="128"/>
+        <element name="InventoryItem" positionX="-63" positionY="150" width="160" height="128"/>
+        <element name="Document" positionX="300" positionY="-18" width="200" height="240"/>
+        <element name="LineItem" positionX="300" positionY="200" width="160" height="160"/>
+    </elements>
+</model>

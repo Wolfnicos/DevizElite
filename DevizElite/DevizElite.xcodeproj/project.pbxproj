@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		D16B62F22E76D89900BD307D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D16B62D62E76D89800BD307D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D16B62DD2E76D89800BD307D;
+			remoteInfo = DevizElite;
+		};
+		D16B62FC2E76D89900BD307D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D16B62D62E76D89800BD307D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D16B62DD2E76D89800BD307D;
+			remoteInfo = DevizElite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D16B62DE2E76D89800BD307D /* DevizElite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevizElite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D16B62F12E76D89900BD307D /* DevizEliteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevizEliteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D16B62FB2E76D89900BD307D /* DevizEliteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevizEliteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D16B62E02E76D89800BD307D /* DevizElite */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DevizElite;
+			sourceTree = "<group>";
+		};
+		D16B62F42E76D89900BD307D /* DevizEliteTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DevizEliteTests;
+			sourceTree = "<group>";
+		};
+		D16B62FE2E76D89900BD307D /* DevizEliteUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DevizEliteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D16B62DB2E76D89800BD307D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D16B62EE2E76D89900BD307D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D16B62F82E76D89900BD307D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D16B62D52E76D89800BD307D = {
+			isa = PBXGroup;
+			children = (
+				D16B62E02E76D89800BD307D /* DevizElite */,
+				D16B62F42E76D89900BD307D /* DevizEliteTests */,
+				D16B62FE2E76D89900BD307D /* DevizEliteUITests */,
+				D16B62DF2E76D89800BD307D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D16B62DF2E76D89800BD307D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D16B62DE2E76D89800BD307D /* DevizElite.app */,
+				D16B62F12E76D89900BD307D /* DevizEliteTests.xctest */,
+				D16B62FB2E76D89900BD307D /* DevizEliteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D16B62DD2E76D89800BD307D /* DevizElite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D16B63052E76D89900BD307D /* Build configuration list for PBXNativeTarget "DevizElite" */;
+			buildPhases = (
+				D16B62DA2E76D89800BD307D /* Sources */,
+				D16B62DB2E76D89800BD307D /* Frameworks */,
+				D16B62DC2E76D89800BD307D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D16B62E02E76D89800BD307D /* DevizElite */,
+			);
+			name = DevizElite;
+			packageProductDependencies = (
+			);
+			productName = DevizElite;
+			productReference = D16B62DE2E76D89800BD307D /* DevizElite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D16B62F02E76D89900BD307D /* DevizEliteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D16B63082E76D89900BD307D /* Build configuration list for PBXNativeTarget "DevizEliteTests" */;
+			buildPhases = (
+				D16B62ED2E76D89900BD307D /* Sources */,
+				D16B62EE2E76D89900BD307D /* Frameworks */,
+				D16B62EF2E76D89900BD307D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D16B62F32E76D89900BD307D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D16B62F42E76D89900BD307D /* DevizEliteTests */,
+			);
+			name = DevizEliteTests;
+			packageProductDependencies = (
+			);
+			productName = DevizEliteTests;
+			productReference = D16B62F12E76D89900BD307D /* DevizEliteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D16B62FA2E76D89900BD307D /* DevizEliteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D16B630B2E76D89900BD307D /* Build configuration list for PBXNativeTarget "DevizEliteUITests" */;
+			buildPhases = (
+				D16B62F72E76D89900BD307D /* Sources */,
+				D16B62F82E76D89900BD307D /* Frameworks */,
+				D16B62F92E76D89900BD307D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D16B62FD2E76D89900BD307D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D16B62FE2E76D89900BD307D /* DevizEliteUITests */,
+			);
+			name = DevizEliteUITests;
+			packageProductDependencies = (
+			);
+			productName = DevizEliteUITests;
+			productReference = D16B62FB2E76D89900BD307D /* DevizEliteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D16B62D62E76D89800BD307D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					D16B62DD2E76D89800BD307D = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					D16B62F02E76D89900BD307D = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = D16B62DD2E76D89800BD307D;
+					};
+					D16B62FA2E76D89900BD307D = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = D16B62DD2E76D89800BD307D;
+					};
+				};
+			};
+			buildConfigurationList = D16B62D92E76D89800BD307D /* Build configuration list for PBXProject "DevizElite" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+				ro,
+			);
+			mainGroup = D16B62D52E76D89800BD307D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D16B62DF2E76D89800BD307D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D16B62DD2E76D89800BD307D /* DevizElite */,
+				D16B62F02E76D89900BD307D /* DevizEliteTests */,
+				D16B62FA2E76D89900BD307D /* DevizEliteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D16B62DC2E76D89800BD307D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D16B62EF2E76D89900BD307D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D16B62F92E76D89900BD307D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D16B62DA2E76D89800BD307D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D16B62ED2E76D89900BD307D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D16B62F72E76D89900BD307D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D16B62F32E76D89900BD307D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D16B62DD2E76D89800BD307D /* DevizElite */;
+			targetProxy = D16B62F22E76D89900BD307D /* PBXContainerItemProxy */;
+		};
+		D16B62FD2E76D89900BD307D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D16B62DD2E76D89800BD307D /* DevizElite */;
+			targetProxy = D16B62FC2E76D89900BD307D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D16B63032E76D89900BD307D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9J536667NJ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D16B63042E76D89900BD307D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9J536667NJ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D16B63062E76D89900BD307D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DevizElite/DevizElite.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9J536667NJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NicolasLupu..DevizElite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D16B63072E76D89900BD307D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DevizElite/DevizElite.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9J536667NJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NicolasLupu..DevizElite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D16B63092E76D89900BD307D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9J536667NJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NicolasLupu..DevizEliteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevizElite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DevizElite";
+			};
+			name = Debug;
+		};
+		D16B630A2E76D89900BD307D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9J536667NJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NicolasLupu..DevizEliteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DevizElite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DevizElite";
+			};
+			name = Release;
+		};
+		D16B630C2E76D89900BD307D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9J536667NJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NicolasLupu..DevizEliteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DevizElite;
+			};
+			name = Debug;
+		};
+		D16B630D2E76D89900BD307D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9J536667NJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.NicolasLupu..DevizEliteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DevizElite;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D16B62D92E76D89800BD307D /* Build configuration list for PBXProject "DevizElite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D16B63032E76D89900BD307D /* Debug */,
+				D16B63042E76D89900BD307D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D16B63052E76D89900BD307D /* Build configuration list for PBXNativeTarget "DevizElite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D16B63062E76D89900BD307D /* Debug */,
+				D16B63072E76D89900BD307D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D16B63082E76D89900BD307D /* Build configuration list for PBXNativeTarget "DevizEliteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D16B63092E76D89900BD307D /* Debug */,
+				D16B630A2E76D89900BD307D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D16B630B2E76D89900BD307D /* Build configuration list for PBXNativeTarget "DevizEliteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D16B630C2E76D89900BD307D /* Debug */,
+				D16B630D2E76D89900BD307D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D16B62D62E76D89800BD307D /* Project object */;
+}

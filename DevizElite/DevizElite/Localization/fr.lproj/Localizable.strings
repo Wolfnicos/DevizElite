@@ -1,0 +1,155 @@
+"Dashboard" = "Tableau de bord";
+"Invoices" = "Factures";
+"Estimates" = "Devis";
+"Clients" = "Clients";
+"Items" = "Articles";
+"Reports" = "Rapports";
+"Settings" = "Réglages";
+"Language" = "Langue";
+"App Language" = "Langue de l’app";
+"Theme" = "Thème";
+"New" = "Nouveau";
+"New Invoice" = "Nouvelle Facture";
+"New Estimate" = "Nouveau Devis";
+"Save" = "Enregistrer";
+"Preview" = "Aperçu";
+"Preferences" = "Préférences";
+"Delete" = "Supprimer";
+"Duplicate" = "Dupliquer";
+"Undo" = "Annuler";
+"Redo" = "Rétablir";
+"Client" = "Client";
+"Details" = "Détails";
+"Number" = "Numéro";
+"Issue Date" = "Date d’émission";
+"Due Date" = "Date d’échéance";
+"Currency" = "Devise";
+"Status" = "Statut";
+"Notes" = "Notes";
+"Line Items" = "Lignes";
+"Qty" = "Qté";
+"Unit Price" = "Prix unitaire";
+"Tax %" = "TVA %";
+"Discount %" = "Remise %";
+"Subtotal (HT)" = "Sous‑total (HT)";
+"Tax (TVA)" = "TVA";
+"Total (TTC)" = "Total (TTC)";
+"Total" = "Total";
+"Paid" = "Payé";
+"Pending" = "En attente";
+"Overdue" = "En retard";
+"Draft" = "Brouillon";
+"No client" = "Aucun client";
+"No invoices yet" = "Aucune facture";
+"Create your first invoice to get started" = "Créez votre première facture pour commencer";
+"Create Invoice" = "Créer une facture";
+"Search invoices..." = "Rechercher des factures...";
+"Delete Invoice" = "Supprimer la facture";
+"Are you sure you want to delete this invoice?" = "Êtes-vous sûr de vouloir supprimer cette facture?";
+"Cancel" = "Annuler";
+"Due" = "Échéance";
+"invoices" = "factures";
+
+/* Editor */
+"Invoice Editor" = "Éditeur de Facture";
+"Estimate Editor" = "Éditeur de Devis";
+"Add Item" = "Ajouter article";
+"Add from Catalog" = "Ajouter du catalogue";
+"Description" = "Description";
+"Quantity" = "Quantité";
+"Unit" = "Unité";
+"Price" = "Prix";
+"Discount" = "Remise";
+"Export PDF" = "Exporter PDF";
+"Save & Close" = "Enregistrer";
+
+/* Templates */
+"Modern" = "Moderne";
+"Professional" = "Professionnel";
+"Classic" = "Classique";
+"Minimal" = "Minimal";
+
+/* Client */
+"Client Name" = "Nom du client";
+"Client Address" = "Adresse du client";
+"Tax ID" = "N° TVA";
+"Phone" = "Téléphone";
+"Email" = "Email";
+"Project" = "Projet";
+"Site Address" = "Adresse du chantier";
+
+/* Company */
+"Company" = "Entreprise";
+"Company Name" = "Nom de l'entreprise";
+"Company Address" = "Adresse de l'entreprise";
+"EMITENT" = "ÉMETTEUR";
+"CLIENT" = "CLIENT";
+
+/* Invoice */
+"INVOICE" = "FACTURE";
+"ESTIMATE" = "DEVIS";
+"Invoice N°" = "Facture N°";
+"Estimate N°" = "Devis N°";
+
+/* Settings */
+"System" = "Système";
+"Light" = "Clair";
+"Dark" = "Sombre";
+"Invoicing" = "Facturation";
+"Configure the app to your preferences" = "Configurez l'application selon vos préférences";
+
+/* Dashboard */
+"Welcome back" = "Bon retour";
+"Create an invoice" = "Créer une facture";
+"Create an estimate" = "Créer un devis";
+"Add a client" = "Ajouter un client";
+"View detailed reports" = "Voir les rapports détaillés";
+"Total Revenue" = "Revenus Totaux";
+"Outstanding Invoices" = "Factures en Attente";
+"Active Clients" = "Clients Actifs";
+"This Month" = "Ce Mois";
+"Revenue Evolution" = "Évolution des Revenus";
+"Status Distribution" = "Distribution des Statuts";
+"Subtotal" = "Sous-total";
+"Tax (TVA)" = "TVA";
+"Edit Invoice" = "Modifier Facture";
+
+/* Catalog */
+"Construction Catalog" = "Catalogue Construction";
+"All" = "Tout";
+"Materials" = "Matériaux";
+"Labor" = "Main-d'œuvre";
+"Equipment" = "Équipement";
+"Search items..." = "Rechercher des articles...";
+"items" = "articles";
+"pcs" = "pcs";
+"bag" = "sac";
+"day" = "jour";
+"hour" = "heure";
+
+/* Catalog Items */
+"Porotherm Brick 25" = "Brique Porotherm 25";
+"Ceramic brick for masonry" = "Brique céramique pour maçonnerie";
+"Cement CEM II 42.5R" = "Ciment CEM II 42.5R";
+"40kg Portland cement bag" = "Sac de ciment Portland 40kg";
+"Rebar OB37 Ø12" = "Fer à béton OB37 Ø12";
+"Steel rebar for reinforcement" = "Armature en acier pour renforcement";
+"AAC Block Ytong" = "Bloc AAC Ytong";
+"Autoclaved aerated concrete block" = "Bloc de béton cellulaire autoclavé";
+"Polystyrene EPS100" = "Polystyrène EPS100";
+"Expanded polystyrene insulation" = "Isolation en polystyrène expansé";
+"Masonry work" = "Travaux de maçonnerie";
+"Brick masonry execution" = "Exécution de maçonnerie en brique";
+"Plastering work" = "Travaux de plâtrage";
+"Traditional plaster application" = "Application de plâtre traditionnel";
+"Painting work" = "Travaux de peinture";
+"Surface preparation and painting" = "Préparation et peinture de surface";
+"Tile installation" = "Pose de carrelage";
+"Ceramic tile installation" = "Installation de carreaux céramiques";
+"Concrete mixer rental" = "Location bétonnière";
+"Daily equipment rental" = "Location d'équipement à la journée";
+"Scaffolding rental" = "Location d'échafaudage";
+"Scaffolding system rental" = "Location de système d'échafaudage";
+"Crane service" = "Service de grue";
+"Mobile crane with operator" = "Grue mobile avec opérateur";
+
