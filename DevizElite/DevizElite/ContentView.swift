@@ -136,7 +136,7 @@ struct ContentView: View {
             ClientsListView()
                 .environment(\.managedObjectContext, viewContext)
         case .products:
-            ProductsListView()
+            ItemsListView()
                 .environment(\.managedObjectContext, viewContext)
         case .reports:
             ReportsPlaceholderView()

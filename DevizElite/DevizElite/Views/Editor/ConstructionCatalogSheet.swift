@@ -4,122 +4,29 @@ struct ConstructionCatalogSheet: View {
     let onSelect: (SimpleCatalogItem) -> Void
     @Environment(\.dismiss) private var dismiss
     @EnvironmentObject private var i18n: LocalizationService
+    @ObservedObject private var database = ConstructionDatabase.shared
     @State private var searchText = ""
     @State private var selectedCategory = "All"
     
     var categories: [String] {
-        [
-            L10n.t("All"),
-            L10n.t("Materials"),
-            L10n.t("Labor"),
-            L10n.t("Equipment")
-        ]
+        var result = [L10n.t("All")]
+        result.append(contentsOf: database.categories.map { $0.nameFR })
+        return result
     }
     
     var catalogItems: [SimpleCatalogItem] {
-        [
-            // Materials
-            SimpleCatalogItem(
-                code: "MAT001",
-                name: L10n.t("Porotherm Brick 25"),
-                category: L10n.t("Materials"),
-                unit: L10n.t("pcs"),
-                price: 2.5,
-                description: L10n.t("Ceramic brick for masonry")
-            ),
-            SimpleCatalogItem(
-                code: "MAT002",
-                name: L10n.t("Cement CEM II 42.5R"),
-                category: L10n.t("Materials"),
-                unit: L10n.t("bag"),
-                price: 25,
-                description: L10n.t("40kg Portland cement bag")
-            ),
-            SimpleCatalogItem(
-                code: "MAT003",
-                name: L10n.t("Rebar OB37 Ø12"),
-                category: L10n.t("Materials"),
-                unit: "kg",
-                price: 4.5,
-                description: L10n.t("Steel rebar for reinforcement")
-            ),
-            SimpleCatalogItem(
-                code: "MAT004",
-                name: L10n.t("AAC Block Ytong"),
-                category: L10n.t("Materials"),
-                unit: L10n.t("pcs"),
-                price: 8.5,
-                description: L10n.t("Autoclaved aerated concrete block")
-            ),
-            SimpleCatalogItem(
-                code: "MAT005",
-                name: L10n.t("Polystyrene EPS100"),
-                category: L10n.t("Materials"),
-                unit: "m²",
-                price: 35,
-                description: L10n.t("Expanded polystyrene insulation")
-            ),
-            
-            // Labor
-            SimpleCatalogItem(
-                code: "MAN001",
-                name: L10n.t("Masonry work"),
-                category: L10n.t("Labor"),
-                unit: "m²",
-                price: 45,
-                description: L10n.t("Brick masonry execution")
-            ),
-            SimpleCatalogItem(
-                code: "MAN002",
-                name: L10n.t("Plastering work"),
-                category: L10n.t("Labor"),
-                unit: "m²",
-                price: 25,
-                description: L10n.t("Traditional plaster application")
-            ),
-            SimpleCatalogItem(
-                code: "MAN003",
-                name: L10n.t("Painting work"),
-                category: L10n.t("Labor"),
-                unit: "m²",
-                price: 18,
-                description: L10n.t("Surface preparation and painting")
-            ),
-            SimpleCatalogItem(
-                code: "MAN004",
-                name: L10n.t("Tile installation"),
-                category: L10n.t("Labor"),
-                unit: "m²",
-                price: 35,
-                description: L10n.t("Ceramic tile installation")
-            ),
-            
-            // Equipment
-            SimpleCatalogItem(
-                code: "EQ001",
-                name: L10n.t("Concrete mixer rental"),
-                category: L10n.t("Equipment"),
-                unit: L10n.t("day"),
-                price: 50,
-                description: L10n.t("Daily equipment rental")
-            ),
-            SimpleCatalogItem(
-                code: "EQ002",
-                name: L10n.t("Scaffolding rental"),
-                category: L10n.t("Equipment"),
-                unit: "m²",
-                price: 5,
-                description: L10n.t("Scaffolding system rental")
-            ),
-            SimpleCatalogItem(
-                code: "EQ003",
-                name: L10n.t("Crane service"),
-                category: L10n.t("Equipment"),
-                unit: L10n.t("hour"),
-                price: 150,
-                description: L10n.t("Mobile crane with operator")
-            )
-        ]
+        database.categories.flatMap { category in
+            category.products.map { p in
+                SimpleCatalogItem(
+                    code: p.code,
+                    name: p.nameFR,
+                    category: category.nameFR,
+                    unit: p.unit,
+                    price: database.getPrice(for: p),
+                    description: p.description
+                )
+            }
+        }
     }
     
     var filteredItems: [SimpleCatalogItem] {
@@ -144,6 +51,11 @@ struct ConstructionCatalogSheet: View {
                     .fontWeight(.bold)
                 
                 Spacer()
+                Picker(L10n.t("Country"), selection: $database.selectedCountry) {
+                    Text("FR").tag(ConstructionDatabase.Country.france)
+                    Text("BE").tag(ConstructionDatabase.Country.belgium)
+                }
+                .pickerStyle(.segmented)
                 
                 Button(L10n.t("Close")) {
                     dismiss()

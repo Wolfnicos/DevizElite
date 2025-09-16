@@ -93,6 +93,23 @@ struct InvoiceEditorView: View {
             for idx in lineItems.indices { lineItems[idx].taxRate = newVal.rate }
             calculateTotals()
         }
+        .onReceive(NotificationCenter.default.publisher(for: Notification.Name("AddProductToCurrentDocument"))) { note in
+            guard let info = note.userInfo,
+                  let desc = info["description"] as? String,
+                  let unit = info["unit"] as? String,
+                  let price = info["price"] as? Double else { return }
+            var newItem = ConstructionLineItem(
+                description: desc,
+                quantity: 1,
+                unit: unit,
+                unitPrice: price,
+                taxRate: selectedVATProfile.rate,
+                discount: 0
+            )
+            newItem.taxRate = selectedVATProfile.rate
+            lineItems.append(newItem)
+            calculateTotals()
+        }
     }
     
     private var editorForm: some View {
@@ -189,6 +206,24 @@ struct InvoiceEditorView: View {
             
             Spacer()
             
+            Button(L10n.t("Export PDF")) {
+                saveDocument()
+                exportPDF()
+            }
+            .buttonStyle(SecondaryButtonStyle())
+
+            Button("Export PNG") {
+                saveDocument()
+                exportPNG()
+            }
+            .buttonStyle(SecondaryButtonStyle())
+
+            Button("Export JPG") {
+                saveDocument()
+                exportJPG()
+            }
+            .buttonStyle(SecondaryButtonStyle())
+
             Button(L10n.t("Save & Close")) {
                 saveDocument()
                 isPresented = false
@@ -302,6 +337,81 @@ struct InvoiceEditorView: View {
         }
     }
     
+    private func exportPDF() {
+        viewContext.perform {
+            do {
+                // Pick the same template shown in the live preview
+                let styleRaw = UserDefaults.standard.string(forKey: "templateStyle") ?? TemplateStyle.Classic.rawValue
+                let style = TemplateStyle(rawValue: styleRaw) ?? .Classic
+                let data = try PDFService.shared.generatePDF(for: document, using: style)
+                let panel = NSSavePanel()
+                panel.allowedContentTypes = [.pdf]
+                panel.nameFieldStringValue = (document.number ?? "document") + ".pdf"
+                if panel.runModal() == .OK, let url = panel.url {
+                    try data.write(to: url)
+                }
+            } catch {
+                print("PDF export error: \(error)")
+            }
+        }
+    }
+
+    private func exportPNG() {
+        viewContext.perform {
+            let styleRaw = UserDefaults.standard.string(forKey: "templateStyle") ?? TemplateStyle.Classic.rawValue
+            let style = TemplateStyle(rawValue: styleRaw) ?? .Classic
+            let pages = PDFService.shared.generatePNG(for: document, using: style)
+            guard !pages.isEmpty else { return }
+            if pages.count == 1 {
+                let panel = NSSavePanel()
+                panel.allowedContentTypes = [.png]
+                panel.nameFieldStringValue = (document.number ?? "document") + ".png"
+                if panel.runModal() == .OK, let url = panel.url {
+                    try? pages[0].write(to: url)
+                }
+            } else {
+                let panel = NSOpenPanel()
+                panel.canChooseFiles = false
+                panel.canChooseDirectories = true
+                panel.prompt = "Choose Folder"
+                if panel.runModal() == .OK, let dir = panel.url {
+                    for (idx, data) in pages.enumerated() {
+                        let url = dir.appendingPathComponent(String(format: "%@_%02d.png", document.number ?? "document", idx+1))
+                        try? data.write(to: url)
+                    }
+                }
+            }
+        }
+    }
+
+    private func exportJPG() {
+        viewContext.perform {
+            let styleRaw = UserDefaults.standard.string(forKey: "templateStyle") ?? TemplateStyle.Classic.rawValue
+            let style = TemplateStyle(rawValue: styleRaw) ?? .Classic
+            let pages = PDFService.shared.generateJPEG(for: document, using: style)
+            guard !pages.isEmpty else { return }
+            if pages.count == 1 {
+                let panel = NSSavePanel()
+                panel.allowedContentTypes = [.jpeg]
+                panel.nameFieldStringValue = (document.number ?? "document") + ".jpg"
+                if panel.runModal() == .OK, let url = panel.url {
+                    try? pages[0].write(to: url)
+                }
+            } else {
+                let panel = NSOpenPanel()
+                panel.canChooseFiles = false
+                panel.canChooseDirectories = true
+                panel.prompt = "Choose Folder"
+                if panel.runModal() == .OK, let dir = panel.url {
+                    for (idx, data) in pages.enumerated() {
+                        let url = dir.appendingPathComponent(String(format: "%@_%02d.jpg", document.number ?? "document", idx+1))
+                        try? data.write(to: url)
+                    }
+                }
+            }
+        }
+    }
+
     private func calculateTotals() {
         subtotal = lineItems.reduce(0) { $0 + $1.total }
         totalTax = lineItems.reduce(0) { $0 + $1.taxAmount }

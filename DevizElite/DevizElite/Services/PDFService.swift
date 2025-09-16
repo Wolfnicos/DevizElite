@@ -1,32 +1,114 @@
 import Foundation
 import PDFKit
 import SwiftUI
+import AppKit
 
 final class PDFService {
     static let shared = PDFService()
 
     @MainActor
     func generatePDF(for document: Document, in view: NSView? = nil) throws -> Data {
-        let pdf = PDFDocument()
-        let page = PDFPage(image: renderImage(for: document))
-        if let page = page {
-            pdf.insert(page, at: 0)
+        // A4 at 72 dpi (no extra margins; templates handle their own padding)
+        let pageSize = NSSize(width: 595, height: 842)
+        // Always use the Professional generator so all formats (PDF/PNG/JPG) are identical
+        let pro = ProfessionalPDFGenerator()
+        if let data = pro.generate(document: document, isQuote: (document.type ?? "invoice").lowercased() != "invoice") {
+            return data
         }
-        guard let data = pdf.dataRepresentation() else { throw NSError(domain: "PDF", code: -1) }
-        return data
+        // Fallback to SwiftUI rendering if Pro generator returns nil
+        let styleRaw = UserDefaults.standard.string(forKey: "templateStyle") ?? TemplateStyle.Classic.rawValue
+        let style = TemplateStyle(rawValue: styleRaw) ?? .Classic
+        return try generatePDF(for: document, using: style, pageSize: pageSize)
+    }
+
+    // MARK: - Image export (PNG/JPEG) with the same template rendering
+    // Rasterize Pro PDF to images (A4 @ 72dpi)
+    private func rasterize(pdfData: Data, pageSize: NSSize = NSSize(width: 595, height: 842)) -> [NSBitmapImageRep] {
+        guard let doc = PDFDocument(data: pdfData) else { return [] }
+        var reps: [NSBitmapImageRep] = []
+        let width = Int(pageSize.width)
+        let height = Int(pageSize.height)
+        for i in 0..<doc.pageCount {
+            guard let page = doc.page(at: i) else { continue }
+            let rep = NSBitmapImageRep(bitmapDataPlanes: nil,
+                                       pixelsWide: width,
+                                       pixelsHigh: height,
+                                       bitsPerSample: 8,
+                                       samplesPerPixel: 4,
+                                       hasAlpha: true,
+                                       isPlanar: false,
+                                       colorSpaceName: .deviceRGB,
+                                       bytesPerRow: 0,
+                                       bitsPerPixel: 0)!
+            rep.size = pageSize
+
+            // Use PDFKit thumbnail to guarantee correct orientation, then draw into the rep
+            let thumbnail = page.thumbnail(of: pageSize, for: .mediaBox)
+            if let nsctx = NSGraphicsContext(bitmapImageRep: rep) {
+                NSGraphicsContext.saveGraphicsState()
+                NSGraphicsContext.current = nsctx
+                nsctx.cgContext.setFillColor(NSColor.white.cgColor)
+                nsctx.cgContext.fill(CGRect(x: 0, y: 0, width: pageSize.width, height: pageSize.height))
+                thumbnail.draw(in: CGRect(x: 0, y: 0, width: pageSize.width, height: pageSize.height),
+                               from: .zero,
+                               operation: .sourceOver,
+                               fraction: 1.0,
+                               respectFlipped: true,
+                               hints: nil)
+                NSGraphicsContext.restoreGraphicsState()
+            }
+            reps.append(rep)
+        }
+        return reps
     }
 
     @MainActor
-    private func renderImage(for document: Document) -> NSImage {
-        let styleRaw = UserDefaults.standard.string(forKey: "templateStyle") ?? TemplateStyle.Classic.rawValue
-        let style = TemplateStyle(rawValue: styleRaw) ?? .Classic
-        let renderer = ImageRenderer(content: AnyView(templateView(for: style, document: document)).frame(width: 595, height: 842))
-        let size = NSSize(width: 595, height: 842)
-        let image = NSImage(size: size)
-        image.lockFocus()
-        renderer.nsImage?.draw(in: NSRect(origin: .zero, size: size))
-        image.unlockFocus()
-        return image
+    func generatePNG(for document: Document, using style: TemplateStyle) -> [Data] {
+        let pro = ProfessionalPDFGenerator()
+        guard let pdf = pro.generate(document: document, isQuote: (document.type ?? "invoice").lowercased() != "invoice") else { return [] }
+        return rasterize(pdfData: pdf).compactMap { $0.representation(using: .png, properties: [:]) }
+    }
+
+    @MainActor
+    func generateJPEG(for document: Document, using style: TemplateStyle, quality: CGFloat = 0.9) -> [Data] {
+        let pro = ProfessionalPDFGenerator()
+        guard let pdf = pro.generate(document: document, isQuote: (document.type ?? "invoice").lowercased() != "invoice") else { return [] }
+        let props: [NSBitmapImageRep.PropertyKey: Any] = [.compressionFactor: quality]
+        return rasterize(pdfData: pdf).compactMap { $0.representation(using: .jpeg, properties: props) }
+    }
+    @MainActor
+    func generatePDF(for document: Document, using style: TemplateStyle, pageSize: NSSize = NSSize(width: 595, height: 842)) throws -> Data {
+        // Build SwiftUI view with fixed width and intrinsic height
+        let hosted = NSHostingView(rootView: AnyView(
+            templateView(for: style, document: document)
+                .environment(\.colorScheme, .light)
+                .frame(width: pageSize.width)
+                .background(Color.white)
+        ))
+        hosted.frame = NSRect(x: 0, y: 0, width: pageSize.width, height: 10)
+        hosted.layoutSubtreeIfNeeded()
+        let contentHeight = max(hosted.fittingSize.height, pageSize.height)
+        hosted.frame.size.height = contentHeight
+
+        // Assemble multipage PDF (no clipping, exact A4 pages)
+        let master = PDFDocument()
+        let pageCount = Int(ceil(contentHeight / pageSize.height))
+        for i in 0..<pageCount {
+            var originY = contentHeight - pageSize.height - CGFloat(i) * pageSize.height
+            var height = pageSize.height
+            if originY < 0 {
+                height += originY
+                originY = 0
+            }
+            let slice = NSRect(x: 0, y: originY, width: pageSize.width, height: height)
+            let pageData = hosted.dataWithPDF(inside: slice)
+            if let pageDoc = PDFDocument(data: pageData), let page = pageDoc.page(at: 0) {
+                master.insert(page, at: master.pageCount)
+            }
+        }
+        if let data = master.dataRepresentation() { return data }
+        // Fallback single-page
+        return hosted.dataWithPDF(inside: NSRect(x: 0, y: 0, width: pageSize.width, height: pageSize.height))
     }
 
     @ViewBuilder
@@ -40,7 +122,7 @@ final class PDFService {
             case .BEProfessionalInvoice: BEProfessionalInvoiceTemplate(document: document)
             case .FRModernQuote, .BEProfessionalQuote: ClassicTemplate(document: document)
             case .BTP2025Invoice: BTP2025InvoiceTemplate(document: document)
-            case .BTP2025Quote: ClassicTemplate(document: document)
+            case .BTP2025Quote: BTP2025InvoiceTemplate(document: document)
             }
         } else { // estimate
             switch style {
@@ -51,7 +133,7 @@ final class PDFService {
             case .BEProfessionalQuote: BEProfessionalQuoteTemplate(document: document)
             case .FRModernInvoice, .BEProfessionalInvoice: EstimateClassicTemplate(document: document)
             case .BTP2025Quote: BTP2025QuoteTemplate(document: document)
-            case .BTP2025Invoice: EstimateClassicTemplate(document: document)
+            case .BTP2025Invoice: BTP2025QuoteTemplate(document: document)
             }
         }
     }
@@ -59,7 +141,9 @@ final class PDFService {
     // Helper for live preview embedding
     @ViewBuilder
     func sharedView(for style: TemplateStyle, document: Document) -> some View {
-        AnyView(templateView(for: style, document: document))
+        let styleRaw = UserDefaults.standard.string(forKey: "templateStyle") ?? TemplateStyle.Classic.rawValue
+        let style = TemplateStyle(rawValue: styleRaw) ?? .Classic
+        AnyView(templateView(for: style, document: document).background(Color.white))
     }
 }
 
@@ -406,6 +490,9 @@ private struct BTPTheme {
     static let sectionBg = Color(hex: "F1F7FF")
     static let sectionStroke = Color(hex: "B5D6FF")
     static let tableHeaderText = Color.white
+    // Explicit panel colors (avoid system window background so PDF keeps colors)
+    static let panelBg = Color(hex: "F5F7FA")
+    static let panelStroke = Color(hex: "E0E6EF")
 }
 
 private enum BTPFont {
@@ -485,9 +572,10 @@ private struct BTPParties: View {
             }
         }
         .padding(12)
-        .background(Color(NSColor.windowBackgroundColor))
+        .background(BTPTheme.panelBg)
         .cornerRadius(8)
         .overlay(Rectangle().frame(width: 4).foregroundColor(.blue), alignment: .leading)
+        .overlay(RoundedRectangle(cornerRadius: 8).stroke(BTPTheme.panelStroke))
     }
 }
 
@@ -505,7 +593,7 @@ private struct BTPProjectInfo: View {
         }
         .padding(12)
         .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading) // expand first so background fills
-        .background(LinearGradient(colors: [BTPTheme.sectionBg, Color(NSColor.windowBackgroundColor)] , startPoint: .leading, endPoint: .trailing))
+        .background(LinearGradient(colors: [BTPTheme.sectionBg, BTPTheme.panelBg] , startPoint: .leading, endPoint: .trailing))
         .cornerRadius(16)
         .overlay(RoundedRectangle(cornerRadius: 16).stroke(BTPTheme.sectionStroke))
     }
@@ -642,8 +730,9 @@ private struct BTPObservationsBox: View {
             }
         }
         .padding(12)
-        .background(Color(NSColor.windowBackgroundColor))
+        .background(BTPTheme.panelBg)
         .cornerRadius(10)
+        .overlay(RoundedRectangle(cornerRadius: 10).stroke(BTPTheme.panelStroke))
     }
 }
 
@@ -684,8 +773,9 @@ private struct BTPLegalSection: View {
             .foregroundColor(.secondary)
         }
         .padding(12)
-        .background(Color(NSColor.windowBackgroundColor))
+        .background(BTPTheme.panelBg)
         .cornerRadius(10)
+        .overlay(RoundedRectangle(cornerRadius: 10).stroke(BTPTheme.panelStroke))
     }
 }
 

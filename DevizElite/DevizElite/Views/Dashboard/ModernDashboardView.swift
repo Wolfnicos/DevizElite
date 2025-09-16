@@ -4,10 +4,13 @@ import CoreData
 
 struct ModernDashboardView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    @EnvironmentObject private var i18n: LocalizationService
     @StateObject private var viewModel = DashboardViewModel()
     @State private var selectedPeriod: Period = .month
     @State private var showNewInvoice = false
     @State private var showNewEstimate = false
+    @State private var showNewClient = false
+    @State private var showReports = false
     
     enum Period: String, CaseIterable {
         case week = "Week"
@@ -38,13 +41,19 @@ struct ModernDashboardView: View {
         }
         .background(DesignSystem.Colors.background)
         .navigationTitle("Dashboard")
-        .sheet(isPresented: $showNewInvoice) {
-            Text("New Invoice Editor")
-                .frame(width: 800, height: 600)
+        .onChange(of: showNewInvoice) { _, v in
+            if v {
+                let wc = InvoiceWindowController(document: nil, context: viewContext, i18n: i18n, type: "invoice")
+                wc.showWindow(nil)
+                showNewInvoice = false
+            }
         }
-        .sheet(isPresented: $showNewEstimate) {
-            Text("New Estimate Editor")
-                .frame(width: 800, height: 600)
+        .onChange(of: showNewEstimate) { _, v in
+            if v {
+                let wc = InvoiceWindowController(document: nil, context: viewContext, i18n: i18n, type: "estimate")
+                wc.showWindow(nil)
+                showNewEstimate = false
+            }
         }
         .onAppear {
             viewModel.setContext(viewContext)
@@ -104,7 +113,7 @@ struct ModernDashboardView: View {
                 subtitle: L10n.t("Add a client"),
                 color: DesignSystem.Colors.accent
             ) {
-                // Add client action
+                showNewClient = true
             }
             
             QuickActionCard(
@@ -113,7 +122,7 @@ struct ModernDashboardView: View {
                 subtitle: L10n.t("View detailed reports"),
                 color: DesignSystem.Colors.warning
             ) {
-                // Reports action
+                showReports = true
             }
         }
     }

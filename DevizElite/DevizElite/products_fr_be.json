@@ -1,0 +1,11 @@
+[
+  {"id":"fr-0001","nameFR":"Ciment CEM II 42,5R","nameEN":"Cement CEM II 42.5R","category":"Gros œuvre","country":"FR","price":95.0,"unit":"sac 35kg"},
+  {"id":"fr-0002","nameFR":"Béton prêt à l'emploi","nameEN":"Ready-mix concrete","category":"Gros œuvre","country":"FR","price":120.0,"unit":"m³"},
+  {"id":"fr-0003","nameFR":"Bloc AAC Ytong","nameEN":"AAC Block","category":"Gros œuvre","country":"FR","price":4.8,"unit":"pcs"},
+  {"id":"fr-0004","nameFR":"Laine minérale 100mm","nameEN":"Mineral wool 100mm","category":"Isolation","country":"FR","price":8.9,"unit":"m²"},
+  {"id":"fr-0005","nameFR":"Fenêtre PVC double vitrage","nameEN":"PVC window double glazing","category":"Menuiseries","country":"FR","price":230.0,"unit":"pcs"},
+  {"id":"be-0001","nameFR":"Brique de parement","nameEN":"Facing brick","category":"Gros œuvre","country":"BE","price":0.85,"unit":"pcs"},
+  {"id":"be-0002","nameFR":"Pare-vapeur toiture","nameEN":"Roof vapor barrier","category":"Isolation","country":"BE","price":2.9,"unit":"m²"},
+  {"id":"be-0003","nameFR":"Peinture acrylique intérieure","nameEN":"Interior acrylic paint","category":"Peinture","country":"BE","price":28.0,"unit":"L"}
+]
+
