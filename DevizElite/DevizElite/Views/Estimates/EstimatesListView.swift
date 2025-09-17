@@ -54,6 +54,7 @@ struct EstimatesListView: View {
                     .padding(.vertical, DesignSystem.Spacing.sm)
                     .padding(.horizontal, DesignSystem.Spacing.md)
                 }
+                .onDelete(perform: deleteEstimates) // SWIPE TO DELETE
             }
             .listStyle(PlainListStyle())
             .background(DesignSystem.Colors.background)
@@ -91,6 +92,23 @@ struct EstimatesListView: View {
                 try viewContext.save()
             } catch {
                 print("Error deleting estimate: \(error)")
+            }
+        }
+    }
+    
+    // MARK: - Swipe to delete functionality
+    private func deleteEstimates(at offsets: IndexSet) {
+        withAnimation {
+            for index in offsets {
+                let estimate = filteredEstimates[index]
+                viewContext.delete(estimate)
+            }
+            
+            do {
+                try viewContext.save()
+                print("✅ Devis supprimés avec succès")
+            } catch {
+                print("❌ Erreur lors de la suppression: \(error)")
             }
         }
     }

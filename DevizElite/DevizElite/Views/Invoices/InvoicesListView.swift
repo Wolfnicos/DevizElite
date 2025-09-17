@@ -32,6 +32,9 @@ struct InvoicesListView: View {
                 onSearchChanged: { _ in },
                 onNewInvoice: {
                     showNewInvoice = true
+                },
+                onNewInvoiceWithTemplate: { style in
+                    openInvoiceEditor(for: nil, withTemplate: style)
                 }
             )
             
@@ -50,6 +53,7 @@ struct InvoicesListView: View {
                     .padding(.vertical, DesignSystem.Spacing.sm)
                     .padding(.horizontal, DesignSystem.Spacing.md)
                 }
+                .onDelete(perform: deleteInvoices) // SWIPE TO DELETE
             }
             .listStyle(PlainListStyle())
             .background(DesignSystem.Colors.background)
@@ -90,10 +94,30 @@ struct InvoicesListView: View {
             }
         }
     }
+    
+    // MARK: - Swipe to delete functionality
+    private func deleteInvoices(at offsets: IndexSet) {
+        withAnimation {
+            for index in offsets {
+                let invoice = filteredInvoices[index]
+                viewContext.delete(invoice)
+            }
+            
+            do {
+                try viewContext.save()
+                print("✅ Factures supprimées avec succès")
+            } catch {
+                print("❌ Erreur lors de la suppression: \(error)")
+            }
+        }
+    }
 
-    private func openInvoiceEditor(for document: Document?) {
-        // Force BTP 2025 invoice template as default when opening
-        UserDefaults.standard.set(TemplateStyle.BTP2025Invoice.rawValue, forKey: "templateStyle")
+    private func openInvoiceEditor(for document: Document?, withTemplate style: TemplateStyle? = nil) {
+        // Set template if provided, otherwise use current selection
+        if let style = style {
+            UserDefaults.standard.set(style.rawValue, forKey: "templateStyle")
+        }
+        
         let windowController = InvoiceWindowController(
             document: document,
             context: viewContext,
@@ -109,6 +133,9 @@ private struct HeaderView: View {
     @Binding var searchTerm: String
     var onSearchChanged: (String) -> Void
     var onNewInvoice: () -> Void
+    var onNewInvoiceWithTemplate: (TemplateStyle) -> Void
+    
+    @State private var showTemplateSelector = false
     
     var body: some View {
         HStack {
@@ -118,6 +145,25 @@ private struct HeaderView: View {
             
             Spacer()
             
+            // Template Selector Button
+            Button {
+                showTemplateSelector = true
+            } label: {
+                HStack {
+                    Image(systemName: "doc.badge.gearshape")
+                    Text("Nouvelle Facture BTP")
+                }
+            }
+            .buttonStyle(.borderedProminent)
+            .sheet(isPresented: $showTemplateSelector) {
+                TemplateSelector(
+                    isPresented: $showTemplateSelector,
+                    documentType: .invoice,
+                    onTemplateSelected: onNewInvoiceWithTemplate
+                )
+            }
+            
+            // Classic New Invoice Button
             Button(action: onNewInvoice) {
                 Label(L10n.t("New Invoice"), systemImage: "plus")
             }

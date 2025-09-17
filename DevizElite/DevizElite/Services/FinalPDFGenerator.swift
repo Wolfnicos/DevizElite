@@ -92,7 +92,7 @@ class FinalPDFGenerator {
     }
     
     private static func drawCompleteDocument(in context: CGContext, document: Document, pageRect: CGRect, isDevis: Bool) {
-        let margin: CGFloat = 40
+        let _: CGFloat = 40
         
         // 1. HEADER with correct type differentiation
         drawHeader(in: context, document: document, pageRect: pageRect, isDevis: isDevis)
@@ -154,7 +154,7 @@ class FinalPDFGenerator {
     }
     
     private static func drawDocumentInfo(in context: CGContext, document: Document, pageRect: CGRect, startY: CGFloat) -> CGFloat {
-        var yPos = startY
+        let yPos = startY
         
         let docNumber = "N° \(document.number ?? "2024-001")"
         drawText(
@@ -201,14 +201,19 @@ class FinalPDFGenerator {
             yPos -= 18
         }
         
-        // Client info
+        // Client info avec vérification améliorée
         var clientY = startY
         drawText(text: "CLIENT:", at: CGPoint(x: 320, y: clientY), fontSize: 12, color: NSColor.black, bold: true, in: context)
         clientY -= 20
         
         if let client = document.safeClient {
-            if let clientName = client.name, !clientName.isEmpty {
+            let clientName = client.name ?? ""
+            if !clientName.isEmpty {
                 drawText(text: clientName, at: CGPoint(x: 320, y: clientY), fontSize: 11, color: NSColor.black, bold: false, in: context)
+                clientY -= 18
+            } else {
+                // Pas de nom de client
+                drawText(text: "Non spécifié", at: CGPoint(x: 320, y: clientY), fontSize: 11, color: NSColor.gray, bold: false, in: context)
                 clientY -= 18
             }
             
@@ -223,8 +228,24 @@ class FinalPDFGenerator {
                 let fullCity = "\(postalCode) \(city)".trimmingCharacters(in: .whitespaces)
                 if !fullCity.isEmpty {
                     drawText(text: fullCity, at: CGPoint(x: 320, y: clientY), fontSize: 10, color: NSColor.black, bold: false, in: context)
+                    clientY -= 18
                 }
             }
+            
+            // Informations supplémentaires si disponibles
+            if let phone = client.phone, !phone.isEmpty {
+                drawText(text: "Tél: \(phone)", at: CGPoint(x: 320, y: clientY), fontSize: 9, color: NSColor.gray, bold: false, in: context)
+                clientY -= 15
+            }
+            
+            if let email = client.contactEmail, !email.isEmpty {
+                drawText(text: "Email: \(email)", at: CGPoint(x: 320, y: clientY), fontSize: 9, color: NSColor.gray, bold: false, in: context)
+                clientY -= 15
+            }
+        } else {
+            // Aucun client associé
+            drawText(text: "Aucun client spécifié", at: CGPoint(x: 320, y: clientY), fontSize: 11, color: NSColor.red, bold: false, in: context)
+            clientY -= 18
         }
         
         return min(yPos, clientY) - 20
@@ -430,27 +451,52 @@ class FinalPDFGenerator {
         let totalsX = pageRect.width - 200
         var yPos = startY
         
-        // Total HT
-        drawText(text: "Total HT:", at: CGPoint(x: totalsX, y: yPos), fontSize: 12, color: NSColor.black, bold: true, in: context)
-        drawText(text: formatEuro(calculations.totalHT), at: CGPoint(x: totalsX + 80, y: yPos), fontSize: 12, color: NSColor.black, bold: false, in: context)
+        // Total HT avec alignement parfait
+        drawAlignedLabelValue(
+            label: "Total HT :",
+            value: formatEuro(calculations.totalHT),
+            at: CGPoint(x: totalsX, y: yPos),
+            labelFont: 12,
+            valueFont: 12,
+            color: NSColor.black,
+            spacing: 100,
+            in: context
+        )
         yPos -= 20
         
-        // VAT by rate - CORRECT calculations
+        // VAT by rate - CORRECT calculations avec alignement
         for (ratePercent, amount) in calculations.vatByRate.sorted(by: { $0.key < $1.key }) {
-            let vatText = String(format: "TVA %.1f%%:", ratePercent)
-            drawText(text: vatText, at: CGPoint(x: totalsX, y: yPos), fontSize: 11, color: NSColor.black, bold: false, in: context)
-            drawText(text: formatEuro(amount), at: CGPoint(x: totalsX + 80, y: yPos), fontSize: 11, color: NSColor.black, bold: false, in: context)
+            let vatText = String(format: "TVA %.1f%% :", ratePercent)
+            drawAlignedLabelValue(
+                label: vatText,
+                value: formatEuro(amount),
+                at: CGPoint(x: totalsX, y: yPos),
+                labelFont: 11,
+                valueFont: 11,
+                color: NSColor.black,
+                spacing: 100,
+                in: context
+            )
             yPos -= 18
         }
         
-        // Total TTC
+        // Total TTC avec espacement parfait
         yPos -= 10
-        let totalRect = CGRect(x: totalsX - 10, y: yPos - 5, width: 180, height: 20)
+        let totalRect = CGRect(x: totalsX - 10, y: yPos - 5, width: 200, height: 20)
         context.setFillColor(red: 0.2, green: 0.4, blue: 0.8, alpha: 1.0)
         context.fill(totalRect)
         
-        drawText(text: "TOTAL TTC:", at: CGPoint(x: totalsX, y: yPos), fontSize: 14, color: NSColor.white, bold: true, in: context)
-        drawText(text: formatEuro(calculations.totalTTC), at: CGPoint(x: totalsX + 80, y: yPos), fontSize: 14, color: NSColor.white, bold: true, in: context)
+        drawAlignedLabelValue(
+            label: "TOTAL TTC :",
+            value: formatEuro(calculations.totalTTC),
+            at: CGPoint(x: totalsX, y: yPos),
+            labelFont: 14,
+            valueFont: 14,
+            color: NSColor.white,
+            spacing: 100,
+            bold: true,
+            in: context
+        )
         
         return yPos - 30
     }
@@ -579,6 +625,40 @@ class FinalPDFGenerator {
         context.textPosition = point
         CTLineDraw(line, context)
         context.restoreGState()
+    }
+    
+    // MARK: - Aligned text drawing for perfect spacing
+    private static func drawAlignedLabelValue(
+        label: String,
+        value: String,
+        at point: CGPoint,
+        labelFont: CGFloat,
+        valueFont: CGFloat,
+        color: NSColor,
+        spacing: CGFloat,
+        bold: Bool = false,
+        in context: CGContext
+    ) {
+        // Draw label (left-aligned)
+        drawText(
+            text: label,
+            at: point,
+            fontSize: labelFont,
+            color: color,
+            bold: bold,
+            in: context
+        )
+        
+        // Draw value (right-aligned at fixed position)
+        let valuePoint = CGPoint(x: point.x + spacing, y: point.y)
+        drawText(
+            text: value,
+            at: valuePoint,
+            fontSize: valueFont,
+            color: color,
+            bold: bold,
+            in: context
+        )
     }
     
     private static func formatEuro(_ amount: Double) -> String {
