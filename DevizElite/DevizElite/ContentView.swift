@@ -13,6 +13,7 @@ struct ContentView: View {
         case estimates = "Estimates"
         case clients = "Clients"
         case products = "Products"
+        case templates = "Templates"
         case reports = "Reports"
         
         var icon: String {
@@ -22,6 +23,7 @@ struct ContentView: View {
             case .estimates: return "doc.text"
             case .clients: return "person.2"
             case .products: return "cube.box"
+            case .templates: return "doc.badge.gearshape"
             case .reports: return "chart.bar"
             }
         }
@@ -132,14 +134,18 @@ struct ContentView: View {
         case .estimates:
             EstimatesListView()
                 .environment(\.managedObjectContext, viewContext)
+                .environmentObject(i18n)
         case .clients:
             ClientsListView()
                 .environment(\.managedObjectContext, viewContext)
         case .products:
             ItemsListView()
                 .environment(\.managedObjectContext, viewContext)
+        case .templates:
+            TemplatesView()
+                .environment(\.managedObjectContext, viewContext)
         case .reports:
-            ReportsPlaceholderView()
+            ReportsView()
                 .environment(\.managedObjectContext, viewContext)
         }
     }
@@ -177,84 +183,7 @@ struct NavigationButton: View {
 }
 
 // MARK: - Placeholder Views
-
-struct EstimatesListView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-    @EnvironmentObject private var i18n: LocalizationService
-    
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Document.issueDate, ascending: false)],
-        predicate: NSPredicate(format: "type == %@", "estimate"),
-        animation: .default)
-    private var estimates: FetchedResults<Document>
-
-    @State private var searchTerm: String = ""
-    @State private var selectedEstimate: Document?
-    @State private var showNewEstimate = false
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            HStack {
-                TextField(L10n.t("Search quotes..."), text: $searchTerm)
-                    .textFieldStyle(ModernTextFieldStyle())
-                    .frame(maxWidth: 300)
-                Spacer()
-                Button {
-                    showNewEstimate = true
-                } label: {
-                    Label(L10n.t("New Quote"), systemImage: "plus")
-                }
-                .buttonStyle(PrimaryButtonStyle())
-            }
-            .padding()
-
-            List {
-                ForEach(filteredEstimates) { doc in
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(doc.number ?? "N/A").font(DesignSystem.Typography.headline)
-                            Text(doc.safeClient?.name ?? L10n.t("No client")).font(DesignSystem.Typography.callout).foregroundColor(DesignSystem.Colors.textSecondary)
-                        }
-                        Spacer()
-                        VStack(alignment: .trailing) {
-                            Text(formatCurrency(doc.total?.doubleValue ?? 0))
-                                .font(DesignSystem.Typography.headline)
-                            Text(doc.issueDate ?? Date(), style: .date)
-                                .font(DesignSystem.Typography.callout)
-                                .foregroundColor(DesignSystem.Colors.textSecondary)
-                        }
-                    }
-                    .contentShape(Rectangle())
-                    .onTapGesture { selectedEstimate = doc }
-                }
-            }
-            .listStyle(PlainListStyle())
-        }
-        .background(DesignSystem.Colors.background)
-        .onChange(of: showNewEstimate) { _, v in
-            if v {
-                openQuoteEditor(for: nil)
-                showNewEstimate = false
-            }
-        }
-        .onChange(of: selectedEstimate) { _, doc in
-            if let d = doc { openQuoteEditor(for: d); selectedEstimate = nil }
-        }
-    }
-
-    private var filteredEstimates: [Document] {
-        estimates.filter { d in
-            searchTerm.isEmpty || (d.number?.localizedCaseInsensitiveContains(searchTerm) ?? false) || (d.safeClient?.name?.localizedCaseInsensitiveContains(searchTerm) ?? false)
-        }
-    }
-
-    private func openQuoteEditor(for document: Document?) {
-        // Force BTP 2025 quote template as default when opening
-        UserDefaults.standard.set(TemplateStyle.BTP2025Quote.rawValue, forKey: "templateStyle")
-        let wc = InvoiceWindowController(document: document, context: viewContext, i18n: i18n, type: "estimate")
-        wc.showWindow(nil)
-    }
-}
+// EstimatesListView is now in its own file: Views/Estimates/EstimatesListView.swift
 
 struct ClientsPlaceholderView: View {
     var body: some View {

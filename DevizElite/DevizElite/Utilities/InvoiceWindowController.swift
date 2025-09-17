@@ -52,11 +52,23 @@ class InvoiceWindowController: NSWindowController, NSWindowDelegate {
             // Note: We don't save here. The editor is responsible for the first save.
         }
 
-        rootView = AnyView(
-            InvoiceEditorView(document: documentToEdit, isPresented: isPresented)
-                .environment(\.managedObjectContext, context)
-                .environmentObject(i18n)
-        )
+        // Route to appropriate editor based on document type
+        if isBTPDocument(documentToEdit) {
+            rootView = AnyView(
+                BTPDocumentEditorView(document: documentToEdit)
+                    .environment(\.managedObjectContext, context)
+                    .environmentObject(i18n)
+                    .onReceive(NotificationCenter.default.publisher(for: Notification.Name("CloseWindow"))) { _ in
+                        window.close()
+                    }
+            )
+        } else {
+            rootView = AnyView(
+                InvoiceEditorView(document: documentToEdit, isPresented: isPresented)
+                    .environment(\.managedObjectContext, context)
+                    .environmentObject(i18n)
+            )
+        }
         
         window.contentView = NSHostingView(rootView: rootView)
         window.delegate = self
@@ -65,14 +77,14 @@ class InvoiceWindowController: NSWindowController, NSWindowDelegate {
     private func generateInvoiceNumber(context: NSManagedObjectContext) -> String {
         let year = Calendar.current.component(.year, from: Date())
         let request: NSFetchRequest<Document> = Document.fetchRequest()
-        request.predicate = NSPredicate(format: "type == %@ AND number BEGINSWITH[c] %@", "invoice", "INV-\(year)")
+        request.predicate = NSPredicate(format: "type == %@ AND number BEGINSWITH[c] %@", "invoice", "FA-\(year)")
         
         do {
             let count = try context.count(for: request)
-            return "INV-\(year)-\(String(format: "%04d", count + 1))"
+            return "FA-\(year)-\(String(format: "%03d", count + 1))"
         } catch {
             // Fallback for safety
-            return "INV-\(year)-\(Int.random(in: 1000...9999))"
+            return "FA-\(year)-\(String(format: "%03d", Int.random(in: 1...999)))"
         }
     }
 
@@ -86,6 +98,32 @@ class InvoiceWindowController: NSWindowController, NSWindowDelegate {
         } catch {
             return "DV-\(year)-\(Int.random(in: 1000...9999))"
         }
+    }
+    
+    // MARK: - Helper Methods
+    
+    private func isBTPDocument(_ document: Document) -> Bool {
+        // Check if document has BTP-specific fields or settings
+        if document.typeTravaux != nil { return true }
+        if document.zoneTravaux != nil { return true }
+        if document.projectName != nil && !(document.projectName?.isEmpty ?? true) { return true }
+        if document.siteAddress != nil && !(document.siteAddress?.isEmpty ?? true) { return true }
+        if document.permitNumber != nil && !(document.permitNumber?.isEmpty ?? true) { return true }
+        
+        // Check if any line items have BTP-specific properties
+        if let lineItems = document.lineItems?.allObjects as? [LineItem] {
+            for item in lineItems {
+                if item.corpsEtat != nil { return true }
+                if item.uniteBTP != nil { return true }
+                if item.lotNumber != nil && !(item.lotNumber?.isEmpty ?? true) { return true }
+            }
+        }
+        
+        // Check template style preference for BTP templates
+        let templateStyle = UserDefaults.standard.string(forKey: "templateStyle") ?? ""
+        if templateStyle.contains("BTP") || templateStyle.contains("Construction") || templateStyle.contains("FR") { return true }
+        
+        return false
     }
     
     // MARK: - NSWindowDelegate
