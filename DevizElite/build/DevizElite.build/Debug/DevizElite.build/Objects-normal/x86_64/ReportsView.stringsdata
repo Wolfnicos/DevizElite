@@ -1,0 +1,80 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/ReportsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Month",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 137
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total",
+        "location": {
+          "startingColumn": 80,
+          "startingLine": 137
+        }
+      },
+      {
+        "comment": "",
+        "key": "Amount",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 169
+        }
+      },
+      {
+        "comment": "",
+        "key": "Client",
+        "location": {
+          "startingColumn": 84,
+          "startingLine": 169
+        }
+      },
+      {
+        "comment": "",
+        "key": "Amount",
+        "location": {
+          "startingColumn": 51,
+          "startingLine": 186
+        }
+      },
+      {
+        "comment": "",
+        "key": "Item",
+        "location": {
+          "startingColumn": 84,
+          "startingLine": 186
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@: %@  •  %@: %@  •  %@: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 284
+        }
+      },
+      {
+        "comment": "",
+        "key": "Month",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 293
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total",
+        "location": {
+          "startingColumn": 76,
+          "startingLine": 293
+        }
+      }
+    ]
+  },
+  "version": 1
+}

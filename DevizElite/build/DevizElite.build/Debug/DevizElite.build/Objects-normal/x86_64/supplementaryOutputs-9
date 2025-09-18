@@ -1,0 +1,48 @@
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/GlobalSearchOverlay.swift":
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/GlobalSearchOverlay.dia"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/GlobalSearchOverlay.swiftdeps"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/GlobalSearchOverlay.d"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/GlobalSearchOverlay.o"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/GlobalSearchOverlay.swiftconstvalues"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Templates/BEConstructionQuoteTemplate.swift":
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/BEConstructionQuoteTemplate.swiftconstvalues"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/BEConstructionQuoteTemplate.swiftdeps"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/BEConstructionQuoteTemplate.d"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/BEConstructionQuoteTemplate.dia"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/BEConstructionQuoteTemplate.o"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/SimpleBTPComponents.swift":
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/SimpleBTPComponents.d"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/SimpleBTPComponents.o"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/SimpleBTPComponents.swiftdeps"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/SimpleBTPComponents.swiftconstvalues"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/SimpleBTPComponents.dia"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/ExcelExportService.swift":
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ExcelExportService.o"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ExcelExportService.swiftconstvalues"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ExcelExportService.dia"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ExcelExportService.d"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ExcelExportService.swiftdeps"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/SimplePDFGenerator.swift":
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/SimplePDFGenerator.dia"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/SimplePDFGenerator.o"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/SimplePDFGenerator.swiftconstvalues"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/SimplePDFGenerator.d"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/SimplePDFGenerator.swiftdeps"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Models/ConstructionLineItem.swift":
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ConstructionLineItem.dia"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ConstructionLineItem.swiftdeps"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ConstructionLineItem.o"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ConstructionLineItem.swiftconstvalues"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ConstructionLineItem.d"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/ContentView.swift":
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ContentView.d"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ContentView.swiftdeps"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ContentView.swiftconstvalues"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ContentView.o"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ContentView.dia"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Templates/ModernBTPQuoteTemplate.swift":
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ModernBTPQuoteTemplate.dia"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ModernBTPQuoteTemplate.d"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ModernBTPQuoteTemplate.swiftconstvalues"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ModernBTPQuoteTemplate.o"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ModernBTPQuoteTemplate.swiftdeps"

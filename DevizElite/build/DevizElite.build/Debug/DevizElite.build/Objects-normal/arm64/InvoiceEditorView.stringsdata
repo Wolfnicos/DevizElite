@@ -1,0 +1,248 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/InvoiceEditorView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Export PNG",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 215
+        }
+      },
+      {
+        "comment": "",
+        "key": "Export JPG",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 221
+        }
+      },
+      {
+        "comment": "",
+        "key": "Client",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 432
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 433
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tax ID",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 434
+        }
+      },
+      {
+        "comment": "",
+        "key": "Address",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 435
+        }
+      },
+      {
+        "comment": "",
+        "key": "Phone",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 436
+        }
+      },
+      {
+        "comment": "",
+        "key": "Email",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 437
+        }
+      },
+      {
+        "comment": "",
+        "key": "Invoice Details",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 455
+        }
+      },
+      {
+        "comment": "",
+        "key": "Construction",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 462
+        }
+      },
+      {
+        "comment": "",
+        "key": "Invoice Number",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 456
+        }
+      },
+      {
+        "comment": "",
+        "key": "Issue Date",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 457
+        }
+      },
+      {
+        "comment": "",
+        "key": "Due Date",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 458
+        }
+      },
+      {
+        "comment": "",
+        "key": "TVA",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 459
+        }
+      },
+      {
+        "comment": "",
+        "key": "Project / Work name",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 463
+        }
+      },
+      {
+        "comment": "",
+        "key": "Site address",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 464
+        }
+      },
+      {
+        "comment": "",
+        "key": "Payment terms",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 465
+        }
+      },
+      {
+        "comment": "",
+        "key": "Validity (days)",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 467
+        }
+      },
+      {
+        "comment": "",
+        "key": "Retention %",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 468
+        }
+      },
+      {
+        "comment": "",
+        "key": "Items",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 482
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add Item",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 496
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add from Catalog",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 501
+        }
+      },
+      {
+        "comment": "",
+        "key": "Description",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 516
+        }
+      },
+      {
+        "comment": "",
+        "key": "Qty",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 517
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unit",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 519
+        }
+      },
+      {
+        "comment": "",
+        "key": "Price",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 521
+        }
+      },
+      {
+        "comment": "",
+        "key": "TVA %",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 523
+        }
+      },
+      {
+        "comment": "",
+        "key": "Subtotal:",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 540
+        }
+      },
+      {
+        "comment": "",
+        "key": "TVA:",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 541
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total:",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 542
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,608 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/SimpleBTPComponents.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "🏢 Mon Entreprise",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "👤 Client",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "📋 Détails %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 93
+        }
+      },
+      {
+        "comment": "",
+        "key": "🏗️ Chantier et Travaux",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 129
+        }
+      },
+      {
+        "comment": "",
+        "key": "⚠️ Complétez les données de l'entreprise dans Réglages!",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "📞 %@",
+        "location": {
+          "startingColumn": 65,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "✉️ %@",
+        "location": {
+          "startingColumn": 65,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sélectionner le client",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "➕ Nouveau Client",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "Choisir un client...",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 54
+        }
+      },
+      {
+        "comment": "",
+        "key": "🆔 TVA: %@",
+        "location": {
+          "startingColumn": 68,
+          "startingLine": 83
+        }
+      },
+      {
+        "comment": "",
+        "key": "✉️ %@",
+        "location": {
+          "startingColumn": 79,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "📞 %@",
+        "location": {
+          "startingColumn": 72,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "Numéro:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 96
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ex: FA-2024-001",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 98
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 105
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 107
+        }
+      },
+      {
+        "comment": "",
+        "key": "Validité:",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 116
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 118
+        }
+      },
+      {
+        "comment": "",
+        "key": "Adresse chantier:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ex: 15 rue des Aviateurs, Paris",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 134
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pays:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 141
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pays",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 143
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ %@",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 148
+        }
+      },
+      {
+        "comment": "",
+        "key": "Zone de travaux:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 156
+        }
+      },
+      {
+        "comment": "",
+        "key": "Zone de travaux",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 158
+        }
+      },
+      {
+        "comment": "",
+        "key": "Choisir la zone...",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 165
+        }
+      },
+      {
+        "comment": "",
+        "key": "Type de travaux:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 175
+        }
+      },
+      {
+        "comment": "",
+        "key": "Type de travaux",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 177
+        }
+      },
+      {
+        "comment": "",
+        "key": "Choisir le type...",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 184
+        }
+      },
+      {
+        "comment": "",
+        "key": "TVA suggérée:",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 196
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@%%",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 198
+        }
+      },
+      {
+        "comment": "",
+        "key": "Appliquer à tous",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 202
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 274
+        }
+      },
+      {
+        "comment": "",
+        "key": "➕ Ajouter ouvrage",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 257
+        }
+      },
+      {
+        "comment": "",
+        "key": "🏗️ Catalogue BTP",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 262
+        }
+      },
+      {
+        "comment": "",
+        "key": "🤖 Assistant IA",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 267
+        }
+      },
+      {
+        "comment": "",
+        "key": "Description de l'ouvrage",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 337
+        }
+      },
+      {
+        "comment": "",
+        "key": "Categorie",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 348
+        }
+      },
+      {
+        "comment": "",
+        "key": "🗑",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 368
+        }
+      },
+      {
+        "comment": "",
+        "key": "Catégorie",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 355
+        }
+      },
+      {
+        "comment": "",
+        "key": "Quantité",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 378
+        }
+      },
+      {
+        "comment": "",
+        "key": "1",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 379
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unité",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 392
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unité",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 393
+        }
+      },
+      {
+        "comment": "",
+        "key": "unité",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 400
+        }
+      },
+      {
+        "comment": "",
+        "key": "m²",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 401
+        }
+      },
+      {
+        "comment": "",
+        "key": "m³",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 402
+        }
+      },
+      {
+        "comment": "",
+        "key": "ml",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 403
+        }
+      },
+      {
+        "comment": "",
+        "key": "forfait",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 404
+        }
+      },
+      {
+        "comment": "",
+        "key": "poste",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 405
+        }
+      },
+      {
+        "comment": "",
+        "key": "circuit",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 406
+        }
+      },
+      {
+        "comment": "",
+        "key": "Prix unitaire",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 414
+        }
+      },
+      {
+        "comment": "",
+        "key": "0",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 415
+        }
+      },
+      {
+        "comment": "",
+        "key": "TVA %",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 428
+        }
+      },
+      {
+        "comment": "",
+        "key": "20",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 429
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 444
+        }
+      },
+      {
+        "comment": "",
+        "key": "🔄 Numéro Auto",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 484
+        }
+      },
+      {
+        "comment": "",
+        "key": "📄 Export PDF",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 495
+        }
+      },
+      {
+        "comment": "",
+        "key": "🖼 Export JPEG",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 500
+        }
+      },
+      {
+        "comment": "",
+        "key": "💾 Sauvegarder",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 505
+        }
+      },
+      {
+        "comment": "",
+        "key": "❌ Fermer",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 510
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nouveau Client",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 664
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nom du client *",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 669
+        }
+      },
+      {
+        "comment": "",
+        "key": "Adresse",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 672
+        }
+      },
+      {
+        "comment": "",
+        "key": "Téléphone",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 675
+        }
+      },
+      {
+        "comment": "",
+        "key": "Email",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 678
+        }
+      },
+      {
+        "comment": "",
+        "key": "SIRET/TVA",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 681
+        }
+      },
+      {
+        "comment": "",
+        "key": "Annuler",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 688
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sauvegarder Client",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 695
+        }
+      },
+      {
+        "comment": "",
+        "key": "Export Document",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 728
+        }
+      },
+      {
+        "comment": "",
+        "key": "Închide",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 752
+        }
+      },
+      {
+        "comment": "",
+        "key": "📄 Salvează ca PDF",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 733
+        }
+      },
+      {
+        "comment": "",
+        "key": "🖼 Salvează ca JPEG",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 739
+        }
+      },
+      {
+        "comment": "",
+        "key": "🖼 Salvează ca PNG",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 745
+        }
+      }
+    ]
+  },
+  "version": 1
+}

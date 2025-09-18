@@ -99,7 +99,7 @@ struct ModernDashboardView: View {
             }
             
             QuickActionCard(
-                icon: "doc.text.badge.plus",
+                icon: "doc.text",
                 title: L10n.t("New Estimate"),
                 subtitle: L10n.t("Create an estimate"),
                 color: DesignSystem.Colors.info

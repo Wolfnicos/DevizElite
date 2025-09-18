@@ -1,0 +1,32 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Items/ItemsListView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "FR",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 36
+        }
+      },
+      {
+        "comment": "",
+        "key": "BE",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "SKU",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 127
+        }
+      }
+    ]
+  },
+  "version": 1
+}

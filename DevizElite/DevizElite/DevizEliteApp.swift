@@ -5,6 +5,21 @@ struct DevizEliteApp: App {
     let persistenceController = PersistenceController.shared
     @StateObject private var themeManager = ThemeManager()
     @StateObject private var localizationService = LocalizationService.shared
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    init() {
+        // Disable unnecessary system features to prevent console warnings
+        UserDefaults.standard.set(false, forKey: "NSAllowsAutomaticWindowTabbing")
+        
+        // Set language preferences to prevent AFPreferences warnings
+        UserDefaults.standard.set(["en"], forKey: "AppleLanguages")
+        
+        // Disable automatic termination
+        ProcessInfo.processInfo.disableAutomaticTermination("DevizElite is running")
+        
+        // Disable sudden termination
+        ProcessInfo.processInfo.disableSuddenTermination()
+    }
     
     var body: some Scene {
         WindowGroup {

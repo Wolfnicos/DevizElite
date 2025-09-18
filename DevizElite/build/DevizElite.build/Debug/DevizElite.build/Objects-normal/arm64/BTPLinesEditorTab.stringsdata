@@ -1,0 +1,168 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/BTPLinesEditorTab.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "➕ Ajouter ligne",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "🏗️ Catalogue BTP",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "Grouper par corps d'état",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "🧮 Calculs",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld ligne(s) • Total: %@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 120
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ajouter dans %@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 166
+        }
+      },
+      {
+        "comment": "",
+        "key": "LOT %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 234
+        }
+      },
+      {
+        "comment": "",
+        "key": "📋 %@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 259
+        }
+      },
+      {
+        "comment": "",
+        "key": "Description",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 246
+        }
+      },
+      {
+        "comment": "",
+        "key": "Qté",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 271
+        }
+      },
+      {
+        "comment": "",
+        "key": "Marge: %@%%",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 302
+        }
+      },
+      {
+        "comment": "",
+        "key": "Prix HT",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 289
+        }
+      },
+      {
+        "comment": "",
+        "key": "-%@%%",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 314
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unité",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 382
+        }
+      },
+      {
+        "comment": "",
+        "key": "u",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 386
+        }
+      },
+      {
+        "comment": "",
+        "key": "📅 Planning:",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 408
+        }
+      },
+      {
+        "comment": "",
+        "key": "→",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 419
+        }
+      },
+      {
+        "comment": "",
+        "key": "Début",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 412
+        }
+      },
+      {
+        "comment": "",
+        "key": "Fin",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 422
+        }
+      },
+      {
+        "comment": "",
+        "key": "Terminé",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 431
+        }
+      }
+    ]
+  },
+  "version": 1
+}

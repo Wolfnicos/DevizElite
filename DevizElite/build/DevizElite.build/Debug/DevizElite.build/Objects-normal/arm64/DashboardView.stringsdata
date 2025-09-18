@@ -1,0 +1,104 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/DashboardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "m",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 98
+        }
+      },
+      {
+        "comment": "",
+        "key": "t",
+        "location": {
+          "startingColumn": 61,
+          "startingLine": 98
+        }
+      },
+      {
+        "comment": "",
+        "key": "m",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 100
+        }
+      },
+      {
+        "comment": "",
+        "key": "t",
+        "location": {
+          "startingColumn": 61,
+          "startingLine": 100
+        }
+      },
+      {
+        "comment": "",
+        "key": "d",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 154
+        }
+      },
+      {
+        "comment": "",
+        "key": "a",
+        "location": {
+          "startingColumn": 58,
+          "startingLine": 154
+        }
+      },
+      {
+        "comment": "",
+        "key": "m",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 203
+        }
+      },
+      {
+        "comment": "",
+        "key": "t",
+        "location": {
+          "startingColumn": 65,
+          "startingLine": 203
+        }
+      },
+      {
+        "comment": "",
+        "key": "m",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 205
+        }
+      },
+      {
+        "comment": "",
+        "key": "t",
+        "location": {
+          "startingColumn": 65,
+          "startingLine": 205
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 216
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 53,
+          "startingLine": 217
+        }
+      }
+    ]
+  },
+  "version": 1
+}

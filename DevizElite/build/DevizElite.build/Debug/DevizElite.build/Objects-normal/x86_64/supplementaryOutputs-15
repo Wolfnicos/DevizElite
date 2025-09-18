@@ -1,0 +1,42 @@
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Models/Product.swift":
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/Product.dia"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/Product.swiftconstvalues"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/Product.o"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/Product.swiftdeps"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/Product.d"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Persistence.swift":
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/Persistence.swiftdeps"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/Persistence.dia"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/Persistence.swiftconstvalues"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/Persistence.o"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/Persistence.d"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/ConstructionCatalogSheet.swift":
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ConstructionCatalogSheet.d"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ConstructionCatalogSheet.swiftdeps"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ConstructionCatalogSheet.o"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ConstructionCatalogSheet.dia"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ConstructionCatalogSheet.swiftconstvalues"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/ReportsView.swift":
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ReportsView.swiftconstvalues"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ReportsView.o"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ReportsView.dia"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ReportsView.d"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/ReportsView.swiftdeps"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Templates/BEModernBTPInvoiceTemplate.swift":
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/BEModernBTPInvoiceTemplate.o"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/BEModernBTPInvoiceTemplate.dia"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/BEModernBTPInvoiceTemplate.d"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/BEModernBTPInvoiceTemplate.swiftconstvalues"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/BEModernBTPInvoiceTemplate.swiftdeps"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Models/AppState.swift":
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/AppState.swiftconstvalues"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/AppState.dia"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/AppState.d"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/AppState.swiftdeps"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/AppState.o"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/EmailService.swift":
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/EmailService.swiftconstvalues"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/EmailService.d"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/EmailService.o"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/EmailService.dia"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/x86_64/EmailService.swiftdeps"

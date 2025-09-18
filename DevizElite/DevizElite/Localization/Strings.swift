@@ -76,6 +76,7 @@ final class LocalizationService: ObservableObject {
         if code.hasPrefix("fr") { return "fr" }
         if code.hasPrefix("es") { return "es" }
         if code.hasPrefix("de") { return "de" }
+        if code.hasPrefix("nl") { return "nl" }
         return "en"
     }
 

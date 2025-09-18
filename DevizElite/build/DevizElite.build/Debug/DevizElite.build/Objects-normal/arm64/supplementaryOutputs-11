@@ -1,0 +1,48 @@
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/TemplateManager.swift":
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateManager.swiftdeps"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateManager.swiftconstvalues"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateManager.d"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateManager.dia"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateManager.o"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Catalog/CatalogSelectionView.swift":
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogSelectionView.dia"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogSelectionView.o"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogSelectionView.swiftdeps"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogSelectionView.swiftconstvalues"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogSelectionView.d"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/AuthService.swift":
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthService.swiftdeps"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthService.dia"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthService.o"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthService.swiftconstvalues"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthService.d"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/ConstructionCatalogSheet.swift":
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionCatalogSheet.dia"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionCatalogSheet.d"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionCatalogSheet.swiftdeps"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionCatalogSheet.swiftconstvalues"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionCatalogSheet.o"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/ViewModels/AuthViewModel.swift":
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthViewModel.swiftconstvalues"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthViewModel.o"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthViewModel.swiftdeps"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthViewModel.dia"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthViewModel.d"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Utilities/EstimateWindowController.swift":
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimateWindowController.swiftdeps"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimateWindowController.dia"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimateWindowController.swiftconstvalues"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimateWindowController.o"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimateWindowController.d"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Items/ItemsListView.swift":
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ItemsListView.swiftconstvalues"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ItemsListView.d"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ItemsListView.swiftdeps"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ItemsListView.o"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ItemsListView.dia"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/ExchangeRatesService.swift":
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExchangeRatesService.d"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExchangeRatesService.swiftdeps"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExchangeRatesService.swiftconstvalues"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExchangeRatesService.o"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExchangeRatesService.dia"

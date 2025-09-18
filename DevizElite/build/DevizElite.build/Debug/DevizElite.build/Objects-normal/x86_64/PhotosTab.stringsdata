@@ -1,0 +1,256 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/PhotosTab.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%lld photo(s)",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "📷 Ajouter Photos",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "📁 Galerie",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "Vue",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "🗑️ Supprimer (%lld)",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "Image indisponible",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 234
+        }
+      },
+      {
+        "comment": "",
+        "key": "📍 %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 300
+        }
+      },
+      {
+        "comment": "",
+        "key": "📍 %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 418
+        }
+      },
+      {
+        "comment": "",
+        "key": "• %@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 407
+        }
+      },
+      {
+        "comment": "",
+        "key": "Aucune photo",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 450
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ajoutez des photos de chantier pour documenter l'avancement des travaux",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 454
+        }
+      },
+      {
+        "comment": "",
+        "key": "📷 Ajouter vos premières photos",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 460
+        }
+      },
+      {
+        "comment": "",
+        "key": "Détails Photo",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 585
+        }
+      },
+      {
+        "comment": "",
+        "key": "Image indisponible",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 510
+        }
+      },
+      {
+        "comment": "",
+        "key": "Informations",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 525
+        }
+      },
+      {
+        "comment": "",
+        "key": "Classification",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 533
+        }
+      },
+      {
+        "comment": "",
+        "key": "Catégorie:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 537
+        }
+      },
+      {
+        "comment": "",
+        "key": "Catégorie",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 540
+        }
+      },
+      {
+        "comment": "",
+        "key": "Corps d'état:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 550
+        }
+      },
+      {
+        "comment": "",
+        "key": "Corps d'état",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 553
+        }
+      },
+      {
+        "comment": "",
+        "key": "Aucun",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 554
+        }
+      },
+      {
+        "comment": "",
+        "key": "Localisation:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 563
+        }
+      },
+      {
+        "comment": "",
+        "key": "Localisation sur le chantier",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 566
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notes",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 572
+        }
+      },
+      {
+        "comment": "",
+        "key": "Fermer",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 588
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enregistrer",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 594
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@:",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 617
+        }
+      },
+      {
+        "comment": "",
+        "key": "Galerie Photos",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 649
+        }
+      },
+      {
+        "comment": "",
+        "key": "Galerie complète des photos de chantier",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 637
+        }
+      },
+      {
+        "comment": "",
+        "key": "Fonctionnalité en développement",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 644
+        }
+      },
+      {
+        "comment": "",
+        "key": "Fermer",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 652
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -43,19 +43,23 @@ struct InvoicesListView: View {
             InvoiceStatsView(invoices: Array(invoices))
             
             List {
-                ForEach(filteredInvoices) { invoice in
-                    InvoiceRow(
+                ForEach(filteredInvoices, id: \.id) { invoice in
+                    SwipeableInvoiceRow(
                         invoice: invoice,
                         onEdit: { selectedInvoice = $0 },
-                        onDelete: { deleteInvoice($0) }
+                        onDelete: { 
+                            print("🗑️ DELETE INVOICE: \(invoice.number ?? "N/A")")
+                            deleteInvoice($0) 
+                        }
                     )
-                    .listRowInsets(EdgeInsets())
-                    .padding(.vertical, DesignSystem.Spacing.sm)
-                    .padding(.horizontal, DesignSystem.Spacing.md)
                 }
-                .onDelete(perform: deleteInvoices) // SWIPE TO DELETE
+                .onDelete { indexSet in
+                    print("🔄 SWIPE DELETE triggered for indices: \(indexSet)")
+                    deleteInvoices(at: indexSet)
+                }
             }
-            .listStyle(PlainListStyle())
+            .listStyle(.plain)
+            .scrollContentBackground(.hidden)
             .background(DesignSystem.Colors.background)
         }
         .background(DesignSystem.Colors.background)
@@ -97,17 +101,30 @@ struct InvoicesListView: View {
     
     // MARK: - Swipe to delete functionality
     private func deleteInvoices(at offsets: IndexSet) {
-        withAnimation {
+        print("🔄 deleteInvoices called with offsets: \(offsets)")
+        
+        guard !offsets.isEmpty else {
+            print("⚠️ No offsets provided")
+            return
+        }
+        
+        withAnimation(.easeInOut(duration: 0.3)) {
             for index in offsets {
+                guard index < filteredInvoices.count else {
+                    print("⚠️ Index \(index) out of bounds")
+                    continue
+                }
                 let invoice = filteredInvoices[index]
+                print("🗑️ Suppression de la facture: \(invoice.number ?? "N/A")")
                 viewContext.delete(invoice)
             }
             
             do {
                 try viewContext.save()
-                print("✅ Factures supprimées avec succès")
+                print("✅ \(offsets.count) facture(s) supprimée(s) avec succès")
             } catch {
                 print("❌ Erreur lors de la suppression: \(error)")
+                viewContext.rollback()
             }
         }
     }
@@ -151,10 +168,15 @@ private struct HeaderView: View {
             } label: {
                 HStack {
                     Image(systemName: "doc.badge.gearshape")
+                        .font(.system(size: 14, weight: .medium))
                     Text("Nouvelle Facture BTP")
+                        .font(.system(size: 14, weight: .medium))
                 }
+                .padding(.horizontal, 4)
             }
             .buttonStyle(.borderedProminent)
+            .tint(.blue) // Blue pour les factures
+            .controlSize(.large)
             .sheet(isPresented: $showTemplateSelector) {
                 TemplateSelector(
                     isPresented: $showTemplateSelector,
@@ -280,9 +302,10 @@ private struct InvoiceRow: View {
                 .padding(.leading)
         }
         .contentShape(Rectangle())
-        .onTapGesture {
-            onEdit(invoice)
-        }
+        .gesture(
+            TapGesture()
+                .onEnded { onEdit(invoice) }
+        )
         .contextMenu {
             Button { onEdit(invoice) } label: { Label(L10n.t("Edit"), systemImage: "pencil") }
             Button(role: .destructive) { showDeleteConfirm = true } label: { Label(L10n.t("Delete"), systemImage: "trash") }
@@ -322,5 +345,198 @@ private struct InvoiceRow: View {
             return client.name ?? L10n.t("No client")
         }
         return L10n.t("No client")
+    }
+}
+
+// MARK: - Swipeable Invoice Row with Manual Swipe Detection
+struct SwipeableInvoiceRow: View {
+    @EnvironmentObject private var i18n: LocalizationService
+    let invoice: Document
+    let onEdit: (Document) -> Void
+    let onDelete: (Document) -> Void
+    
+    @State private var showDeleteConfirm = false
+    @State private var dragOffset: CGFloat = 0
+    @State private var showingActions = false
+    
+    var body: some View {
+        ZStack {
+            // Background Delete Action
+            HStack {
+                Spacer()
+                Button(action: { 
+                    print("🔥 MANUAL DELETE BUTTON PRESSED - INVOICE")
+                    showDeleteConfirm = true 
+                }) {
+                    VStack {
+                        Image(systemName: "trash.fill")
+                            .foregroundColor(.white)
+                            .font(.title2)
+                        Text("Supprimer")
+                            .foregroundColor(.white)
+                            .font(.caption)
+                    }
+                }
+                .frame(width: 80)
+                .frame(maxHeight: .infinity)
+                .background(Color.red)
+                .opacity(showingActions ? 1.0 : 0.0)
+            }
+            
+            // Main Content
+            HStack {
+                // Icône FACTURE
+                Image(systemName: "doc.richtext")
+                    .foregroundColor(.blue)
+                    .font(.title2)
+                    .frame(width: 30)
+                
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text(invoice.number ?? "N/A")
+                            .font(DesignSystem.Typography.headline)
+                        
+                        // Badge FACTURE
+                        Text("FACTURE")
+                            .font(.caption2)
+                            .fontWeight(.bold)
+                            .padding(.horizontal, 6)
+                            .padding(.vertical, 2)
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(4)
+                    }
+                    
+                    Text(getClientName(invoice))
+                        .font(DesignSystem.Typography.callout)
+                        .foregroundColor(DesignSystem.Colors.textSecondary)
+                    
+                    // Due date
+                    if let dueDate = invoice.dueDate {
+                        Text("Échéance: \(dueDate, style: .date)")
+                            .font(.caption)
+                            .foregroundColor(isPastDue(dueDate) ? .red : .blue)
+                    }
+                }
+                
+                Spacer()
+                
+                VStack(alignment: .trailing) {
+                    Text(formatCurrency(invoice.total?.doubleValue ?? 0))
+                        .font(DesignSystem.Typography.headline)
+                    Text(invoice.issueDate ?? Date(), style: .date)
+                        .font(DesignSystem.Typography.callout)
+                        .foregroundColor(DesignSystem.Colors.textSecondary)
+                }
+                
+                statusBadge(invoice: invoice)
+                    .padding(.leading)
+            }
+            .padding()
+            .background(Color(.controlBackgroundColor))
+            .cornerRadius(8)
+            .offset(x: dragOffset)
+            .gesture(
+                DragGesture()
+                    .onChanged { value in
+                        print("📱 DRAG DETECTED - INVOICE: \(value.translation.width)")
+                        if value.translation.width < 0 { // Swipe left
+                            dragOffset = max(value.translation.width, -100)
+                            showingActions = dragOffset < -30
+                        }
+                    }
+                    .onEnded { value in
+                        print("📱 DRAG ENDED - INVOICE: \(value.translation.width)")
+                        withAnimation(.spring()) {
+                            if value.translation.width < -50 {
+                                dragOffset = -80
+                                showingActions = true
+                            } else {
+                                dragOffset = 0
+                                showingActions = false
+                            }
+                        }
+                    }
+            )
+            .onTapGesture {
+                if showingActions {
+                    withAnimation(.spring()) {
+                        dragOffset = 0
+                        showingActions = false
+                    }
+                } else {
+                    onEdit(invoice)
+                }
+            }
+        }
+        .clipped()
+        .contextMenu {
+            Button { onEdit(invoice) } label: { 
+                Label(L10n.t("Edit"), systemImage: "pencil") 
+            }
+            Button(role: .destructive) { showDeleteConfirm = true } label: { 
+                Label(L10n.t("Delete"), systemImage: "trash") 
+            }
+        }
+        .alert(L10n.t("Delete Invoice?"), isPresented: $showDeleteConfirm) {
+            Button(L10n.t("Cancel"), role: .cancel) {}
+            Button(L10n.t("Delete"), role: .destructive) { 
+                print("✅ CONFIRMED DELETE - INVOICE")
+                onDelete(invoice) 
+            }
+        } message: {
+            Text(L10n.t("Are you sure you want to delete invoice \(invoice.number ?? "")?"))
+        }
+    }
+    
+    private func statusBadge(invoice: Document) -> some View {
+        Text(statusDisplayName(invoice: invoice))
+            .font(.caption)
+            .fontWeight(.medium)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 5)
+            .background(statusColor(invoice: invoice).opacity(0.2))
+            .foregroundColor(statusColor(invoice: invoice))
+            .cornerRadius(10)
+    }
+    
+    private func statusDisplayName(invoice: Document) -> String {
+        switch invoice.status?.lowercased() {
+        case "draft": return "Brouillon"
+        case "sent": return "Envoyé"
+        case "paid": return "Payé"
+        case "overdue": return "En retard"
+        case "cancelled": return "Annulé"
+        default: return invoice.status?.capitalized ?? "N/A"
+        }
+    }
+    
+    private func statusColor(invoice: Document) -> Color {
+        switch invoice.status?.lowercased() {
+        case "paid": return .green
+        case "sent": return .blue
+        case "overdue": return .red
+        case "cancelled": return .gray
+        case "draft": return .orange
+        default: return .blue
+        }
+    }
+    
+    private func isPastDue(_ date: Date) -> Bool {
+        date < Date()
+    }
+    
+    private func getClientName(_ invoice: Document) -> String {
+        if let client = invoice.safeClient {
+            return client.name ?? L10n.t("No Client")
+        }
+        return L10n.t("No Client")
+    }
+    
+    private func formatCurrency(_ amount: Double) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.currencyCode = "EUR"
+        return formatter.string(from: NSNumber(value: amount)) ?? "0 €"
     }
 }

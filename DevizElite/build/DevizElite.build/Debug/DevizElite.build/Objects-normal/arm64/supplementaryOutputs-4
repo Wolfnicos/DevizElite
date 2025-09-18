@@ -1,0 +1,48 @@
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Templates/FRConstructionInvoiceTemplate.swift":
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionInvoiceTemplate.swiftdeps"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionInvoiceTemplate.swiftconstvalues"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionInvoiceTemplate.o"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionInvoiceTemplate.d"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionInvoiceTemplate.dia"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Models/BTPModels.swift":
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPModels.swiftconstvalues"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPModels.swiftdeps"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPModels.d"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPModels.dia"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPModels.o"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Settings/ModernSettingsView.swift":
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernSettingsView.swiftconstvalues"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernSettingsView.o"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernSettingsView.swiftdeps"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernSettingsView.d"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernSettingsView.dia"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Utilities/ThemeManager.swift":
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ThemeManager.swiftconstvalues"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ThemeManager.swiftdeps"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ThemeManager.d"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ThemeManager.dia"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ThemeManager.o"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/LineItemDetailView.swift":
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItemDetailView.swiftdeps"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItemDetailView.dia"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItemDetailView.swiftconstvalues"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItemDetailView.o"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItemDetailView.d"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/BTPDocumentEditorView.swift":
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPDocumentEditorView.swiftconstvalues"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPDocumentEditorView.d"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPDocumentEditorView.dia"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPDocumentEditorView.swiftdeps"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPDocumentEditorView.o"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Utilities/AppKit+EndEditing.swift":
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppKit+EndEditing.d"
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppKit+EndEditing.swiftconstvalues"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppKit+EndEditing.o"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppKit+EndEditing.swiftdeps"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppKit+EndEditing.dia"
+"/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Templates/TemplatesView.swift":
+  const-values: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplatesView.swiftconstvalues"
+  diagnostics: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplatesView.dia"
+  dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplatesView.d"
+  object: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplatesView.o"
+  swift-dependencies: "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplatesView.swiftdeps"

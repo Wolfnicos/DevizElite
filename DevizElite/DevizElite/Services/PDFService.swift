@@ -43,7 +43,9 @@ final class PDFService {
             rep.size = pageSize
 
             // Use PDFKit thumbnail to guarantee correct orientation, then draw into the rep
-            let thumbnail = page.thumbnail(of: pageSize, for: .mediaBox)
+            // Render full-res thumbnail exactly A4 (prevents mismatch with PDF output coordinates)
+            let targetSize = CGSize(width: pageSize.width, height: pageSize.height)
+            let thumbnail = page.thumbnail(of: targetSize, for: .mediaBox)
             if let nsctx = NSGraphicsContext(bitmapImageRep: rep) {
                 NSGraphicsContext.saveGraphicsState()
                 NSGraphicsContext.current = nsctx
@@ -123,6 +125,10 @@ final class PDFService {
             case .FRModernQuote, .BEProfessionalQuote: ClassicTemplate(document: document)
             case .BTP2025Invoice: BTP2025InvoiceTemplate(document: document)
             case .BTP2025Quote: BTP2025InvoiceTemplate(document: document)
+            case .ModernBTPInvoice: BTP2025InvoiceTemplate(document: document) // Use AppKit template
+            case .ModernBTPQuote: BTP2025InvoiceTemplate(document: document)
+            case .BEModernBTPInvoice: BTP2025InvoiceTemplate(document: document)
+            case .BEModernBTPQuote: BTP2025InvoiceTemplate(document: document)
             }
         } else { // estimate
             switch style {
@@ -134,6 +140,10 @@ final class PDFService {
             case .FRModernInvoice, .BEProfessionalInvoice: EstimateClassicTemplate(document: document)
             case .BTP2025Quote: BTP2025QuoteTemplate(document: document)
             case .BTP2025Invoice: BTP2025QuoteTemplate(document: document)
+            case .ModernBTPInvoice: BTP2025QuoteTemplate(document: document) // Use AppKit template
+            case .ModernBTPQuote: BTP2025QuoteTemplate(document: document)
+            case .BEModernBTPInvoice: BTP2025QuoteTemplate(document: document)
+            case .BEModernBTPQuote: BTP2025QuoteTemplate(document: document)
             }
         }
     }
@@ -815,6 +825,14 @@ private struct BTP2025QuoteTemplate: View {
             }
             BTPConditionsBox()
             BTPGuaranteesBox()
+            
+            // Force page break before signatures if we have many items
+            let itemCount = (document.lineItems as? Set<LineItem>)?.count ?? 0
+            if itemCount > 5 {
+                // Add enough spacing to push signatures to next page
+                Spacer(minLength: 200)
+            }
+            
             BTPSignatureSection()
             BTPFooterQuote()
         }

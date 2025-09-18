@@ -157,14 +157,17 @@ struct SimpleBTPInfoTab: View {
                                 .frame(width: 120, alignment: .leading)
                             Picker("Zone de travaux", selection: Binding(
                                 get: { document.zoneTravaux },
-                                set: { document.zoneTravaux = $0 }
+                                set: { newValue in
+                                    document.zoneTravaux = newValue
+                                    try? viewContext.save()
+                                }
                             )) {
                                 Text("Choisir la zone...").tag(nil as ZoneTravaux?)
                                 ForEach(ZoneTravaux.allCases, id: \.self) { zone in
                                     Text(zone.localized).tag(zone as ZoneTravaux?)
                                 }
                             }
-                            .pickerStyle(MenuPickerStyle())
+                            .pickerStyle(.menu)
                             .frame(width: 200)
                         }
                         
@@ -173,14 +176,17 @@ struct SimpleBTPInfoTab: View {
                                 .frame(width: 120, alignment: .leading)
                             Picker("Type de travaux", selection: Binding(
                                 get: { document.typeTravaux },
-                                set: { document.typeTravaux = $0 }
+                                set: { newValue in
+                                    document.typeTravaux = newValue
+                                    try? viewContext.save()
+                                }
                             )) {
                                 Text("Choisir le type...").tag(nil as TypeTravaux?)
                                 ForEach(TypeTravaux.allCases, id: \.self) { type in
                                     Text(type.localized).tag(type as TypeTravaux?)
                                 }
                             }
-                            .pickerStyle(MenuPickerStyle())
+                            .pickerStyle(.menu)
                             .frame(width: 200)
                         }
                         

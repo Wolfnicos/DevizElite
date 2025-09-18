@@ -1,0 +1,352 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/BTPDocumentEditorView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Informations",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ouvrages",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "🧾 Facture",
+        "location": {
+          "startingColumn": 55,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "📋 Devis",
+        "location": {
+          "startingColumn": 72,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pays",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 118
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 123
+        }
+      },
+      {
+        "comment": "",
+        "key": "Type de travaux",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 141
+        }
+      },
+      {
+        "comment": "",
+        "key": "Non défini",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 148
+        }
+      },
+      {
+        "comment": "",
+        "key": "Zone de travaux",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 169
+        }
+      },
+      {
+        "comment": "",
+        "key": "Non définie",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 176
+        }
+      },
+      {
+        "comment": "",
+        "key": "🏗️ Informations Projet",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 197
+        }
+      },
+      {
+        "comment": "",
+        "key": "📅 Planning Général",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 238
+        }
+      },
+      {
+        "comment": "",
+        "key": "💰 Conditions Financières",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 272
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nom du projet:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 200
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nom du projet",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 202
+        }
+      },
+      {
+        "comment": "",
+        "key": "Adresse chantier:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 209
+        }
+      },
+      {
+        "comment": "",
+        "key": "Adresse du chantier",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 211
+        }
+      },
+      {
+        "comment": "",
+        "key": "N° de permis:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 218
+        }
+      },
+      {
+        "comment": "",
+        "key": "Numéro de permis",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 220
+        }
+      },
+      {
+        "comment": "",
+        "key": "Coordinateur:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 227
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nom du coordinateur",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 229
+        }
+      },
+      {
+        "comment": "",
+        "key": "Début prévu:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 241
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 243
+        }
+      },
+      {
+        "comment": "",
+        "key": "Fin prévue:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 251
+        }
+      },
+      {
+        "comment": "",
+        "key": "",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 253
+        }
+      },
+      {
+        "comment": "",
+        "key": "Phase actuelle:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 261
+        }
+      },
+      {
+        "comment": "",
+        "key": "Phase du projet",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 263
+        }
+      },
+      {
+        "comment": "",
+        "key": "Acompte:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 275
+        }
+      },
+      {
+        "comment": "",
+        "key": "Montant acompte",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 277
+        }
+      },
+      {
+        "comment": "",
+        "key": "Retenue %):",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 284
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pourcentage retenue",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 286
+        }
+      },
+      {
+        "comment": "",
+        "key": "Intérêts retard:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 293
+        }
+      },
+      {
+        "comment": "",
+        "key": "Taux intérêts",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 295
+        }
+      },
+      {
+        "comment": "",
+        "key": "N° Assurance:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 302
+        }
+      },
+      {
+        "comment": "",
+        "key": "Numéro d'assurance",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 304
+        }
+      },
+      {
+        "comment": "",
+        "key": "🏆 Certifications Professionnelles",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 344
+        }
+      },
+      {
+        "comment": "",
+        "key": "🔄 Générer N°",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 429
+        }
+      },
+      {
+        "comment": "",
+        "key": "TVA suggérée: %@%%",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 439
+        }
+      },
+      {
+        "comment": "",
+        "key": "Appliquer à toutes les lignes",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 443
+        }
+      },
+      {
+        "comment": "",
+        "key": "📊 Export",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 455
+        }
+      },
+      {
+        "comment": "",
+        "key": "💾 Sauvegarder",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 460
+        }
+      },
+      {
+        "comment": "",
+        "key": "❌ Fermer",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 465
+        }
+      }
+    ]
+  },
+  "version": 1
+}

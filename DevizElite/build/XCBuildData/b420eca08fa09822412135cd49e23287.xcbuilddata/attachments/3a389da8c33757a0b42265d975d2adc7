@@ -1,0 +1,908 @@
+{
+  "" : {
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizElite-master.dia",
+    "emit-module-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizElite-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizElite-master-emit-module.dia",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizElite-master.swiftdeps"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/AppDelegate.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/ContentView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Design/DesignSystem.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DesignSystem.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DesignSystem.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DesignSystem.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DesignSystem.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DesignSystem.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DesignSystem.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DesignSystem.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DesignSystem~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/DevizEliteApp.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizEliteApp.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizEliteApp.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizEliteApp.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizEliteApp.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizEliteApp.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizEliteApp.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizEliteApp.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizEliteApp~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Extensions/NSImage+Export.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/NSImage+Export.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/NSImage+Export.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/NSImage+Export.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/NSImage+Export.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/NSImage+Export.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/NSImage+Export.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/NSImage+Export.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/NSImage+Export~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Localization/Strings.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Strings.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Strings.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Strings.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Strings.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Strings.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Strings.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Strings.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Strings~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Models/AppState.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppState.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppState.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppState.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppState.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppState.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppState.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppState.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppState~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Models/BTPCoreDataExtension.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPCoreDataExtension.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPCoreDataExtension.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPCoreDataExtension.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPCoreDataExtension.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPCoreDataExtension.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPCoreDataExtension.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPCoreDataExtension.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPCoreDataExtension~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Models/BTPModels.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPModels.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPModels.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPModels.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPModels.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPModels.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPModels.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPModels.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPModels~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Models/CatalogBTP.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogBTP.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogBTP.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogBTP.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogBTP.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogBTP.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogBTP.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogBTP.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogBTP~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Models/ConstructionDatabase.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionDatabase.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionDatabase.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionDatabase.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionDatabase.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionDatabase.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionDatabase.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionDatabase.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionDatabase~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Models/ConstructionLineItem.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionLineItem.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionLineItem.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionLineItem.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionLineItem.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionLineItem.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionLineItem.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionLineItem.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionLineItem~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Models/DocumentStatus.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DocumentStatus.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DocumentStatus.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DocumentStatus.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DocumentStatus.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DocumentStatus.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DocumentStatus.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DocumentStatus.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DocumentStatus~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Models/Product.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Product.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Product.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Product.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Product.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Product.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Product.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Product.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Product~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Persistence.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Persistence.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Persistence.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Persistence.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Persistence.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Persistence.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Persistence.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Persistence.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Persistence~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/AuthService.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthService.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthService.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthService.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthService.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthService.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthService.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthService.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthService~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/BTPAIAssistant.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPAIAssistant.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPAIAssistant.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPAIAssistant.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPAIAssistant.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPAIAssistant.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPAIAssistant.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPAIAssistant.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPAIAssistant~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/BackupService.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BackupService.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BackupService.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BackupService.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BackupService.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BackupService.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BackupService.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BackupService.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BackupService~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/CrossPlatformPDFGenerator.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CrossPlatformPDFGenerator.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CrossPlatformPDFGenerator.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CrossPlatformPDFGenerator.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CrossPlatformPDFGenerator.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CrossPlatformPDFGenerator.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CrossPlatformPDFGenerator.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CrossPlatformPDFGenerator.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CrossPlatformPDFGenerator~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/EmailService.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EmailService.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EmailService.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EmailService.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EmailService.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EmailService.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EmailService.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EmailService.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EmailService~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/ExcelExportService.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExcelExportService.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExcelExportService.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExcelExportService.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExcelExportService.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExcelExportService.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExcelExportService.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExcelExportService.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExcelExportService~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/ExchangeRatesService.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExchangeRatesService.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExchangeRatesService.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExchangeRatesService.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExchangeRatesService.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExchangeRatesService.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExchangeRatesService.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExchangeRatesService.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExchangeRatesService~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/FinalPDFGenerator.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FinalPDFGenerator.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FinalPDFGenerator.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FinalPDFGenerator.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FinalPDFGenerator.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FinalPDFGenerator.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FinalPDFGenerator.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FinalPDFGenerator.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FinalPDFGenerator~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/NotificationService.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/NotificationService.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/NotificationService.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/NotificationService.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/NotificationService.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/NotificationService.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/NotificationService.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/NotificationService.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/NotificationService~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/PDFService.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PDFService.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PDFService.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PDFService.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PDFService.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PDFService.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PDFService.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PDFService.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PDFService~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/ProfessionalPDFGenerator.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ProfessionalPDFGenerator.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ProfessionalPDFGenerator.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ProfessionalPDFGenerator.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ProfessionalPDFGenerator.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ProfessionalPDFGenerator.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ProfessionalPDFGenerator.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ProfessionalPDFGenerator.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ProfessionalPDFGenerator~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/SimplePDFGenerator.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SimplePDFGenerator.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SimplePDFGenerator.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SimplePDFGenerator.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SimplePDFGenerator.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SimplePDFGenerator.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SimplePDFGenerator.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SimplePDFGenerator.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SimplePDFGenerator~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/TemplateManager.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateManager.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateManager.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateManager.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateManager.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateManager.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateManager.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateManager.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateManager~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/UniversalPDFGenerator.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/UniversalPDFGenerator.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/UniversalPDFGenerator.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/UniversalPDFGenerator.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/UniversalPDFGenerator.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/UniversalPDFGenerator.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/UniversalPDFGenerator.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/UniversalPDFGenerator.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/UniversalPDFGenerator~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/WorkingPDFGenerator.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/WorkingPDFGenerator.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/WorkingPDFGenerator.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/WorkingPDFGenerator.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/WorkingPDFGenerator.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/WorkingPDFGenerator.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/WorkingPDFGenerator.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/WorkingPDFGenerator.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/WorkingPDFGenerator~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Templates/BEConstructionInvoiceTemplate.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEConstructionInvoiceTemplate.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEConstructionInvoiceTemplate.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEConstructionInvoiceTemplate.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEConstructionInvoiceTemplate.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEConstructionInvoiceTemplate.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEConstructionInvoiceTemplate.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEConstructionInvoiceTemplate.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEConstructionInvoiceTemplate~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Templates/BEConstructionQuoteTemplate.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEConstructionQuoteTemplate.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEConstructionQuoteTemplate.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEConstructionQuoteTemplate.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEConstructionQuoteTemplate.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEConstructionQuoteTemplate.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEConstructionQuoteTemplate.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEConstructionQuoteTemplate.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEConstructionQuoteTemplate~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Templates/BEModernBTPInvoiceTemplate.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEModernBTPInvoiceTemplate.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEModernBTPInvoiceTemplate.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEModernBTPInvoiceTemplate.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEModernBTPInvoiceTemplate.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEModernBTPInvoiceTemplate.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEModernBTPInvoiceTemplate.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEModernBTPInvoiceTemplate.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEModernBTPInvoiceTemplate~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Templates/BEModernBTPQuoteTemplate.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEModernBTPQuoteTemplate.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEModernBTPQuoteTemplate.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEModernBTPQuoteTemplate.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEModernBTPQuoteTemplate.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEModernBTPQuoteTemplate.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEModernBTPQuoteTemplate.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEModernBTPQuoteTemplate.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BEModernBTPQuoteTemplate~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Templates/FRConstructionInvoiceTemplate.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionInvoiceTemplate.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionInvoiceTemplate.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionInvoiceTemplate.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionInvoiceTemplate.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionInvoiceTemplate.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionInvoiceTemplate.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionInvoiceTemplate.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionInvoiceTemplate~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Templates/FRConstructionQuoteTemplate.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionQuoteTemplate.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionQuoteTemplate.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionQuoteTemplate.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionQuoteTemplate.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionQuoteTemplate.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionQuoteTemplate.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionQuoteTemplate.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/FRConstructionQuoteTemplate~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Templates/ModernBTPInvoiceTemplate.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernBTPInvoiceTemplate.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernBTPInvoiceTemplate.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernBTPInvoiceTemplate.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernBTPInvoiceTemplate.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernBTPInvoiceTemplate.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernBTPInvoiceTemplate.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernBTPInvoiceTemplate.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernBTPInvoiceTemplate~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Templates/ModernBTPQuoteTemplate.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernBTPQuoteTemplate.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernBTPQuoteTemplate.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernBTPQuoteTemplate.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernBTPQuoteTemplate.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernBTPQuoteTemplate.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernBTPQuoteTemplate.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernBTPQuoteTemplate.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernBTPQuoteTemplate~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Utilities/AppActions.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppActions.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppActions.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppActions.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppActions.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppActions.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppActions.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppActions.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppActions~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Utilities/AppKit+EndEditing.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppKit+EndEditing.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppKit+EndEditing.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppKit+EndEditing.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppKit+EndEditing.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppKit+EndEditing.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppKit+EndEditing.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppKit+EndEditing.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AppKit+EndEditing~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Utilities/CoreDataSafeAccess.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CoreDataSafeAccess.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CoreDataSafeAccess.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CoreDataSafeAccess.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CoreDataSafeAccess.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CoreDataSafeAccess.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CoreDataSafeAccess.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CoreDataSafeAccess.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CoreDataSafeAccess~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Utilities/CurrencyFormatter.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CurrencyFormatter.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CurrencyFormatter.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CurrencyFormatter.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CurrencyFormatter.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CurrencyFormatter.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CurrencyFormatter.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CurrencyFormatter.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CurrencyFormatter~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Utilities/EstimateWindowController.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimateWindowController.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimateWindowController.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimateWindowController.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimateWindowController.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimateWindowController.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimateWindowController.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimateWindowController.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimateWindowController~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Utilities/InvoiceWindowController.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoiceWindowController.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoiceWindowController.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoiceWindowController.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoiceWindowController.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoiceWindowController.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoiceWindowController.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoiceWindowController.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoiceWindowController~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Utilities/ModelSafeAccess.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModelSafeAccess.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModelSafeAccess.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModelSafeAccess.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModelSafeAccess.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModelSafeAccess.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModelSafeAccess.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModelSafeAccess.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModelSafeAccess~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Utilities/ThemeManager.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ThemeManager.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ThemeManager.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ThemeManager.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ThemeManager.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ThemeManager.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ThemeManager.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ThemeManager.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ThemeManager~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Utilities/UITheme.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/UITheme.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/UITheme.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/UITheme.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/UITheme.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/UITheme.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/UITheme.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/UITheme.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/UITheme~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/ViewModels/AuthViewModel.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthViewModel.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthViewModel.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthViewModel.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthViewModel.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthViewModel.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthViewModel.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthViewModel.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/AuthViewModel~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/ViewModels/DocumentEditorViewModel.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DocumentEditorViewModel.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DocumentEditorViewModel.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DocumentEditorViewModel.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DocumentEditorViewModel.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DocumentEditorViewModel.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DocumentEditorViewModel.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DocumentEditorViewModel.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DocumentEditorViewModel~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/AI/BTPAIAssistantView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPAIAssistantView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPAIAssistantView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPAIAssistantView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPAIAssistantView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPAIAssistantView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPAIAssistantView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPAIAssistantView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPAIAssistantView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Catalog/CatalogSelectionView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogSelectionView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogSelectionView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogSelectionView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogSelectionView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogSelectionView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogSelectionView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogSelectionView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CatalogSelectionView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Clients/ClientsListView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ClientsListView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ClientsListView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ClientsListView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ClientsListView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ClientsListView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ClientsListView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ClientsListView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ClientsListView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Dashboard/ModernDashboardView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernDashboardView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernDashboardView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernDashboardView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernDashboardView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernDashboardView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernDashboardView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernDashboardView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernDashboardView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/DashboardView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DashboardView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DashboardView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DashboardView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DashboardView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DashboardView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DashboardView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DashboardView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DashboardView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/BTPDocumentEditorView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPDocumentEditorView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPDocumentEditorView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPDocumentEditorView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPDocumentEditorView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPDocumentEditorView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPDocumentEditorView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPDocumentEditorView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPDocumentEditorView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/BTPLinesEditorTab.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPLinesEditorTab.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPLinesEditorTab.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPLinesEditorTab.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPLinesEditorTab.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPLinesEditorTab.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPLinesEditorTab.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPLinesEditorTab.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPLinesEditorTab~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/CalculationsDetailView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CalculationsDetailView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CalculationsDetailView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CalculationsDetailView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CalculationsDetailView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CalculationsDetailView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CalculationsDetailView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CalculationsDetailView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CalculationsDetailView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/CalculationsTab.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CalculationsTab.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CalculationsTab.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CalculationsTab.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CalculationsTab.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CalculationsTab.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CalculationsTab.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CalculationsTab.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/CalculationsTab~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/ConstructionCatalogSheet.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionCatalogSheet.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionCatalogSheet.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionCatalogSheet.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionCatalogSheet.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionCatalogSheet.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionCatalogSheet.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionCatalogSheet.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ConstructionCatalogSheet~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/InvoiceEditorView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoiceEditorView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoiceEditorView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoiceEditorView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoiceEditorView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoiceEditorView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoiceEditorView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoiceEditorView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoiceEditorView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/LineItemDetailView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItemDetailView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItemDetailView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItemDetailView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItemDetailView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItemDetailView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItemDetailView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItemDetailView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItemDetailView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/PhotosTab.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PhotosTab.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PhotosTab.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PhotosTab.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PhotosTab.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PhotosTab.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PhotosTab.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PhotosTab.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PhotosTab~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/PlanningTab.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PlanningTab.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PlanningTab.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PlanningTab.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PlanningTab.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PlanningTab.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PlanningTab.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PlanningTab.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/PlanningTab~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/SimpleBTPComponents.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SimpleBTPComponents.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SimpleBTPComponents.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SimpleBTPComponents.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SimpleBTPComponents.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SimpleBTPComponents.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SimpleBTPComponents.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SimpleBTPComponents.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SimpleBTPComponents~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Estimates/EstimatesListView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimatesListView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimatesListView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimatesListView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimatesListView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimatesListView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimatesListView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimatesListView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/EstimatesListView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/GlobalSearchOverlay.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/GlobalSearchOverlay.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/GlobalSearchOverlay.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/GlobalSearchOverlay.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/GlobalSearchOverlay.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/GlobalSearchOverlay.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/GlobalSearchOverlay.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/GlobalSearchOverlay.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/GlobalSearchOverlay~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Invoices/InvoicesListView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoicesListView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoicesListView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoicesListView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoicesListView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoicesListView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoicesListView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoicesListView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoicesListView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Items/ItemsListView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ItemsListView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ItemsListView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ItemsListView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ItemsListView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ItemsListView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ItemsListView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ItemsListView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ItemsListView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/LoginView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LoginView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LoginView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LoginView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LoginView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LoginView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LoginView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LoginView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LoginView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/ReportsView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ReportsView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ReportsView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ReportsView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ReportsView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ReportsView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ReportsView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ReportsView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ReportsView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Settings/ExcelExportView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExcelExportView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExcelExportView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExcelExportView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExcelExportView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExcelExportView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExcelExportView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExcelExportView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ExcelExportView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Settings/ModernSettingsView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernSettingsView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernSettingsView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernSettingsView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernSettingsView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernSettingsView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernSettingsView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernSettingsView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/ModernSettingsView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Settings/SettingsView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Templates/BTPTemplatePreview.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPTemplatePreview.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPTemplatePreview.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPTemplatePreview.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPTemplatePreview.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPTemplatePreview.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPTemplatePreview.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPTemplatePreview.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/BTPTemplatePreview~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Templates/InvoicePreview.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoicePreview.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoicePreview.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoicePreview.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoicePreview.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoicePreview.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoicePreview.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoicePreview.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InvoicePreview~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Templates/TemplateSelector.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateSelector.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateSelector.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateSelector.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateSelector.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateSelector.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateSelector.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateSelector.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplateSelector~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Templates/TemplatesView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplatesView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplatesView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplatesView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplatesView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplatesView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplatesView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplatesView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TemplatesView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/TestPDFView.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TestPDFView.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TestPDFView.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TestPDFView.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TestPDFView.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TestPDFView.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TestPDFView.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TestPDFView.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/TestPDFView~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/DerivedSources/CoreDataGenerated/DevizElite/Client+CoreDataClass.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Client+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Client+CoreDataClass.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Client+CoreDataClass.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Client+CoreDataClass.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Client+CoreDataClass.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Client+CoreDataClass.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Client+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Client+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/DerivedSources/CoreDataGenerated/DevizElite/Client+CoreDataProperties.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Client+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Client+CoreDataProperties.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Client+CoreDataProperties.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Client+CoreDataProperties.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Client+CoreDataProperties.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Client+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Client+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Client+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/DerivedSources/CoreDataGenerated/DevizElite/DevizElite+CoreDataModel.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizElite+CoreDataModel.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizElite+CoreDataModel.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizElite+CoreDataModel.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizElite+CoreDataModel.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizElite+CoreDataModel.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizElite+CoreDataModel.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizElite+CoreDataModel.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/DevizElite+CoreDataModel~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/DerivedSources/CoreDataGenerated/DevizElite/Document+CoreDataClass.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Document+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Document+CoreDataClass.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Document+CoreDataClass.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Document+CoreDataClass.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Document+CoreDataClass.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Document+CoreDataClass.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Document+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Document+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/DerivedSources/CoreDataGenerated/DevizElite/Document+CoreDataProperties.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Document+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Document+CoreDataProperties.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Document+CoreDataProperties.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Document+CoreDataProperties.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Document+CoreDataProperties.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Document+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Document+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/Document+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/DerivedSources/CoreDataGenerated/DevizElite/InventoryItem+CoreDataClass.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InventoryItem+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InventoryItem+CoreDataClass.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InventoryItem+CoreDataClass.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InventoryItem+CoreDataClass.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InventoryItem+CoreDataClass.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InventoryItem+CoreDataClass.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InventoryItem+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InventoryItem+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/DerivedSources/CoreDataGenerated/DevizElite/InventoryItem+CoreDataProperties.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InventoryItem+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InventoryItem+CoreDataProperties.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InventoryItem+CoreDataProperties.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InventoryItem+CoreDataProperties.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InventoryItem+CoreDataProperties.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InventoryItem+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InventoryItem+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/InventoryItem+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/DerivedSources/CoreDataGenerated/DevizElite/LineItem+CoreDataClass.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItem+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItem+CoreDataClass.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItem+CoreDataClass.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItem+CoreDataClass.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItem+CoreDataClass.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItem+CoreDataClass.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItem+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItem+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/DerivedSources/CoreDataGenerated/DevizElite/LineItem+CoreDataProperties.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItem+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItem+CoreDataProperties.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItem+CoreDataProperties.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItem+CoreDataProperties.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItem+CoreDataProperties.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItem+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItem+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/LineItem+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/DerivedSources/CoreDataGenerated/DevizElite/User+CoreDataClass.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/User+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/User+CoreDataClass.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/User+CoreDataClass.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/User+CoreDataClass.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/User+CoreDataClass.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/User+CoreDataClass.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/User+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/User+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/DerivedSources/CoreDataGenerated/DevizElite/User+CoreDataProperties.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/User+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/User+CoreDataProperties.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/User+CoreDataProperties.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/User+CoreDataProperties.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/User+CoreDataProperties.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/User+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/User+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/User+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/lupudragos/Desktop/DevizElite/DevizElite/build/DevizElite.build/Debug/DevizElite.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

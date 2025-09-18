@@ -1,0 +1,56 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Settings/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "🇫🇷 Français",
+        "location": {
+          "startingColumn": 65,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "🇬🇧 English",
+        "location": {
+          "startingColumn": 65,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "🇷🇴 Română",
+        "location": {
+          "startingColumn": 65,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "🇪🇸 Español",
+        "location": {
+          "startingColumn": 65,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "🇩🇪 Deutsch",
+        "location": {
+          "startingColumn": 65,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@: %lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 51
+        }
+      }
+    ]
+  },
+  "version": 1
+}

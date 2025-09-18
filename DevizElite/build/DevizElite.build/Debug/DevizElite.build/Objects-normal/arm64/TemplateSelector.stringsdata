@@ -1,0 +1,40 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Templates/TemplateSelector.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Choisir un template %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 36
+        }
+      },
+      {
+        "comment": "",
+        "key": "Annuler",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "BTP",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 168
+        }
+      },
+      {
+        "comment": "",
+        "key": "Choisir Template",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 208
+        }
+      }
+    ]
+  },
+  "version": 1
+}

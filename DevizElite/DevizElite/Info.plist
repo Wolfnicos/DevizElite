@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>DevizElite utilise la reconnaissance vocale pour vous permettre de dicter vos devis et factures BTP, et d'interagir avec l'assistant intelligent par la voix pour une expérience plus efficace.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>DevizElite a besoin d'accéder au microphone pour la reconnaissance vocale afin de vous permettre de créer vos documents BTP par dictée vocale.</string>
+	<key>CFBundleName</key>
+	<string>DevizElite</string>
+	<key>CFBundleDisplayName</key>
+	<string>DevizElite</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>15.0</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2024 DevizElite. All rights reserved.</string>
+</dict>
+</plist>

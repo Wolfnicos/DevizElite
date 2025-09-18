@@ -1,0 +1,120 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Dashboard/ModernDashboardView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Dashboard",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "Perioadă",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "Luna",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 185
+        }
+      },
+      {
+        "comment": "",
+        "key": "Venit",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 186
+        }
+      },
+      {
+        "comment": "",
+        "key": "Luna",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 192
+        }
+      },
+      {
+        "comment": "",
+        "key": "Venit",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 193
+        }
+      },
+      {
+        "comment": "",
+        "key": "Count",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 220
+        }
+      },
+      {
+        "comment": "",
+        "key": "Documente Recente",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 253
+        }
+      },
+      {
+        "comment": "",
+        "key": "Vezi toate",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 259
+        }
+      },
+      {
+        "comment": "",
+        "key": "DOCUMENT",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 268
+        }
+      },
+      {
+        "comment": "",
+        "key": "CLIENT",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 273
+        }
+      },
+      {
+        "comment": "",
+        "key": "DATA",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 278
+        }
+      },
+      {
+        "comment": "",
+        "key": "VALOARE",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 283
+        }
+      },
+      {
+        "comment": "",
+        "key": "STATUS",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 288
+        }
+      }
+    ]
+  },
+  "version": 1
+}

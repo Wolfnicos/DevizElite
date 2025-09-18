@@ -44,27 +44,8 @@ struct PersistenceController {
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "DevizElite")
         
-        // --- START: Radical fix for persistent store corruption ---
-        // This code will destroy and re-create the persistent store file,
-        // ensuring any schema mismatch or corruption is resolved.
-        // This is a development-only measure.
-        if !inMemory {
-            let storeURL = container.persistentStoreDescriptions.first?.url
-            if let url = storeURL {
-                do {
-                    // Check if the store file exists before trying to destroy it
-                    if FileManager.default.fileExists(atPath: url.path) {
-                        print("Core Data store found at \(url.path). Destroying for a clean start.")
-                        try container.persistentStoreCoordinator.destroyPersistentStore(at: url, ofType: NSSQLiteStoreType, options: nil)
-                        print("Successfully destroyed persistent store.")
-                    }
-                } catch {
-                    // It's not critical if this fails, but we should know about it.
-                    print("Failed to destroy persistent store: \(error) - This might not be a problem if it's the first run.")
-                }
-            }
-        }
-        // --- END: Radical fix ---
+        // PERSISTENT DATA STORAGE - DATA WILL BE PRESERVED
+        // Removed the automatic store destruction that was clearing data on every restart
         
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
@@ -76,7 +57,24 @@ struct PersistenceController {
                 // For now, we'll just log it.
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
+            print("✅ Core Data store loaded successfully at: \(storeDescription.url?.path ?? "unknown")")
         })
+        
+        // CONFIGURE CORE DATA FOR PERSISTENT STORAGE
         container.viewContext.automaticallyMergesChangesFromParent = true
+        container.viewContext.mergePolicy = NSMergeByPropertyStoreTrumpMergePolicy
+        
+        // ENABLE AUTOSAVE EVERY 10 SECONDS
+        let viewContext = container.viewContext
+        Timer.scheduledTimer(withTimeInterval: 10.0, repeats: true) { _ in
+            if viewContext.hasChanges {
+                do {
+                    try viewContext.save()
+                    print("🔄 Auto-saved Core Data changes")
+                } catch {
+                    print("❌ Auto-save failed: \(error)")
+                }
+            }
+        }
     }
 }

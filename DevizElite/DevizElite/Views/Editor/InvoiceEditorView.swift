@@ -526,7 +526,7 @@ private struct ItemRow: View {
                 .buttonStyle(PlainButtonStyle()).foregroundColor(.red)
         }
         .textFieldStyle(ModernTextFieldStyle(compact: true))
-        .onChange(of: item) { _ in onChanged() }
+        .onChange(of: item) { _, _ in onChanged() }
     }
 }
 

@@ -121,4 +121,167 @@
 "Restart Now" = "Restart Now";
 "Later" = "Later";
 
+/* BTP Construction Specific Translations */
+
+/* Construction Types */
+"construction.new" = "New Construction";
+"construction.renovation" = "Renovation";
+"construction.extension" = "Extension";
+"construction.amenagement" = "Development";
+"construction.maintenance" = "Maintenance";
+"construction.repair" = "Repair";
+
+/* Work Zones */
+"zone.interior" = "Interior";
+"zone.exterior" = "Exterior";
+"zone.both" = "Int. & Ext.";
+"zone.infrastructure" = "Infrastructure";
+"zone.roof" = "Roof";
+"zone.facade" = "Facade";
+
+/* Corps d'état - Construction Trades */
+"corps.gros_oeuvre" = "Structural Work";
+"corps.terrassement" = "Earthwork";
+"corps.fondations" = "Foundations";
+"corps.maconnerie" = "Masonry";
+"corps.beton_arme" = "Reinforced Concrete";
+"corps.charpente" = "Framework";
+"corps.couverture" = "Roofing";
+"corps.etancheite" = "Waterproofing";
+"corps.isolation" = "Insulation";
+"corps.cloisons" = "Partitions";
+"corps.platerie" = "Plasterwork";
+"corps.menuiserie_ext" = "External Joinery";
+"corps.menuiserie_int" = "Internal Joinery";
+"corps.fermetures" = "Closures";
+"corps.verrerie" = "Glazing";
+"corps.plomberie" = "Plumbing";
+"corps.electricite" = "Electrical";
+"corps.chauffage" = "Heating";
+"corps.climatisation" = "Air Conditioning";
+"corps.ventilation" = "Ventilation";
+"corps.ascenseurs" = "Elevators";
+"corps.carrelage" = "Tiling";
+"corps.sols" = "Soft Flooring";
+"corps.peinture" = "Painting";
+"corps.papier_peint" = "Wallpaper";
+"corps.faience" = "Wall Tiles";
+"corps.facade" = "Facade";
+"corps.bardage" = "Cladding";
+"corps.vrd" = "Roads & Utilities";
+"corps.espaces_verts" = "Landscaping";
+"corps.clotures" = "Fencing";
+"corps.cuisines" = "Kitchens";
+"corps.salles_bains" = "Bathrooms";
+"corps.domotique" = "Home Automation";
+"corps.securite" = "Security";
+"corps.nettoyage" = "Cleaning";
+
+/* Units */
+"unit.m2" = "m²";
+"unit.cm2" = "cm²";
+"unit.hectare" = "ha";
+"unit.m3" = "m³";
+"unit.litre" = "L";
+"unit.dm3" = "dm³";
+"unit.m" = "m";
+"unit.cm" = "cm";
+"unit.mm" = "mm";
+"unit.km" = "km";
+"unit.ml" = "ml";
+"unit.kg" = "kg";
+"unit.tonne" = "T";
+"unit.gramme" = "g";
+"unit.unite" = "u";
+"unit.piece" = "pce";
+"unit.lot" = "lot";
+"unit.ensemble" = "set";
+"unit.forfait" = "package";
+"unit.global" = "global";
+"unit.heure" = "h";
+"unit.jour" = "d";
+"unit.semaine" = "wk";
+"unit.mois" = "mo";
+"unit.point" = "pt";
+"unit.ouvrant" = "opening";
+"unit.poste" = "item";
+"unit.circuit" = "circuit";
+"unit.paire" = "pair";
+
+/* Document Types */
+"document.invoice" = "Invoice";
+"document.quote" = "Quote";
+"document.project" = "Project";
+"document.work_order" = "Work Order";
+
+/* Status */
+"status.draft" = "Draft";
+"status.sent" = "Sent";
+"status.accepted" = "Accepted";
+"status.rejected" = "Rejected";
+"status.in_progress" = "In Progress";
+"status.completed" = "Completed";
+"status.paid" = "Paid";
+"status.overdue" = "Overdue";
+"status.cancelled" = "Cancelled";
+
+/* Legal Terms */
+"legal.vat_number" = "VAT Number";
+"legal.company_registration" = "Company Registration";
+"legal.insurance_number" = "Insurance Number";
+"legal.payment_terms" = "Payment Terms";
+"legal.warranty" = "Warranty";
+"legal.liability" = "Liability";
+"legal.payment_due" = "Payment Due";
+"legal.late_payment_interest" = "Late Payment Interest";
+
+/* Project Information */
+"project.name" = "Project Name";
+"project.address" = "Site Address";
+"project.start_date" = "Start Date";
+"project.end_date" = "End Date";
+"project.phase" = "Phase";
+"project.coordinator" = "Coordinator";
+"project.permit_number" = "Permit Number";
+
+/* Financial */
+"financial.subtotal" = "Subtotal";
+"financial.vat" = "VAT";
+"financial.total" = "Total";
+"financial.discount" = "Discount";
+"financial.advance" = "Advance";
+"financial.retention" = "Retention";
+"financial.margin" = "Margin";
+"financial.cost_price" = "Cost Price";
+"financial.selling_price" = "Selling Price";
+
+/* Certifications */
+"certification.rge" = "RGE";
+"certification.qualibat" = "Qualibat";
+"certification.qualit_enr" = "Qualit'EnR";
+"certification.pro_ite" = "Pro-ITE";
+"certification.eco_artisan" = "Eco-Artisan";
+"certification.certibat" = "Certibat";
+"certification.cekal" = "Cekal";
+"certification.cerga" = "CERGA";
+"certification.wtcb" = "WTCB";
+"certification.belgium_green_building" = "Belgium Green Building Council";
+"certification.atg" = "ATG";
+"certification.ce_marking" = "CE Marking";
+"certification.iso_9001" = "ISO 9001";
+"certification.iso_14001" = "ISO 14001";
+"certification.ohsas_18001" = "OHSAS 18001";
+
+/* Client Types */
+"client.individual" = "Individual";
+"client.company" = "Company";
+
+/* Export */
+"export.documents" = "Documents";
+"export.clients" = "Clients";
+"export.items" = "Items";
+"export.accounting" = "Accounting Entries";
+"export.error.invalid_date_range" = "Invalid date range";
+"export.error.currency_required" = "Currency required";
+
 

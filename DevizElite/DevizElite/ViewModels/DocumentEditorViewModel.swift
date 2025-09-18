@@ -43,9 +43,8 @@ final class DocumentEditorViewModel: ObservableObject {
         item.quantity = 1
         item.unitPrice = inventoryItem?.unitPrice ?? 0
         item.taxRate = inventoryItem?.taxRate ?? 0
-        // Avoid linking Core Data relationship to prevent to-many schema mismatch crashes on existing stores
-        // item.inventoryItem = inventoryItem
-        // Do not attach to document here to avoid legacy store relationship mismatch
+        // Attach line item to document to ensure persistence
+        item.document = document
         lineItems.append(item)
         recalculateTotals(save: true)
     }
@@ -58,7 +57,8 @@ final class DocumentEditorViewModel: ObservableObject {
         item.quantity = NSDecimalNumber(value: quantity)
         item.unitPrice = NSDecimalNumber(value: unitPrice)
         item.taxRate = taxRatePercent
-        // Do not attach to document here to avoid legacy store relationship mismatch
+        // Attach line item to document to ensure persistence
+        item.document = document
         lineItems.append(item)
         recalculateTotals(save: true)
     }
@@ -138,20 +138,36 @@ final class DocumentEditorViewModel: ObservableObject {
         isRecalculating = true
 
         let discount = document.discount ?? 0
-        var sub: NSDecimalNumber = 0
-        var tax: NSDecimalNumber = 0
+        var subtotalHT: NSDecimalNumber = 0
+        
+        // First calculate subtotal HT
         lineItems.forEach { li in
             let qty = (li.quantity as NSDecimalNumber?) ?? 0
             let unit = li.unitPrice ?? 0
             let line = qty.multiplying(by: unit)
-            sub = sub.adding(line)
-            let rate = NSDecimalNumber(value: li.taxRate)
-            let lineTax = line.multiplying(by: rate).dividing(by: 100)
-            tax = tax.adding(lineTax)
+            subtotalHT = subtotalHT.adding(line)
         }
-        let subAfterDiscount = max(0, sub.subtracting(discount).decimalValue).nsDecimalNumber
+        
+        // Apply discount to subtotal
+        let subAfterDiscount = max(0, subtotalHT.subtracting(discount).decimalValue).nsDecimalNumber
         subtotal = subAfterDiscount
-        taxTotal = tax
+        
+        // Calculate VAT on the discounted amount
+        var totalTax: NSDecimalNumber = 0
+        let discountRatio = subtotal.doubleValue > 0 ? subtotal.dividing(by: subtotalHT) : NSDecimalNumber.one
+        
+        lineItems.forEach { li in
+            let qty = (li.quantity as NSDecimalNumber?) ?? 0
+            let unit = li.unitPrice ?? 0
+            let lineHT = qty.multiplying(by: unit)
+            // Apply same discount ratio to this line
+            let lineHTDiscounted = lineHT.multiplying(by: discountRatio)
+            let rate = NSDecimalNumber(value: li.taxRate)
+            let lineTax = lineHTDiscounted.multiplying(by: rate).dividing(by: 100)
+            totalTax = totalTax.adding(lineTax)
+        }
+        
+        taxTotal = totalTax
         total = subtotal.adding(taxTotal)
         validationErrors = computeValidationErrors()
 

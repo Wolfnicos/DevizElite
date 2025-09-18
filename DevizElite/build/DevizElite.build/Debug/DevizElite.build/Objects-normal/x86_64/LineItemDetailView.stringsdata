@@ -1,0 +1,288 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/LineItemDetailView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Détails de ligne",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 190
+        }
+      },
+      {
+        "comment": "",
+        "key": "Informations de base",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 50
+        }
+      },
+      {
+        "comment": "",
+        "key": "Classification BTP",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 79
+        }
+      },
+      {
+        "comment": "",
+        "key": "Spécifications techniques",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 101
+        }
+      },
+      {
+        "comment": "",
+        "key": "Coûts et marge",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 107
+        }
+      },
+      {
+        "comment": "",
+        "key": "Planning",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 134
+        }
+      },
+      {
+        "comment": "",
+        "key": "Totaux",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 149
+        }
+      },
+      {
+        "comment": "",
+        "key": "Description",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 51
+        }
+      },
+      {
+        "comment": "",
+        "key": "Prix unitaire HT",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 70
+        }
+      },
+      {
+        "comment": "",
+        "key": "Quantité",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 54
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unité",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 56
+        }
+      },
+      {
+        "comment": "",
+        "key": "Standard",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "Remise %",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 73
+        }
+      },
+      {
+        "comment": "",
+        "key": "TVA %",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 74
+        }
+      },
+      {
+        "comment": "",
+        "key": "Corps d'état",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "Numéro de lot",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 97
+        }
+      },
+      {
+        "comment": "",
+        "key": "Non défini",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "Spécifications",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 102
+        }
+      },
+      {
+        "comment": "",
+        "key": "Coût d'achat HT",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 108
+        }
+      },
+      {
+        "comment": "",
+        "key": "Marge %",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 111
+        }
+      },
+      {
+        "comment": "",
+        "key": "Marge calculée:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 114
+        }
+      },
+      {
+        "comment": "",
+        "key": "Rentabilité:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 123
+        }
+      },
+      {
+        "comment": "",
+        "key": "✅ Rentable",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 126
+        }
+      },
+      {
+        "comment": "",
+        "key": "⚠️ Non rentable",
+        "location": {
+          "startingColumn": 64,
+          "startingLine": 126
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date de début",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 135
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date de fin",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 140
+        }
+      },
+      {
+        "comment": "",
+        "key": "Travaux terminés",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 145
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sous-total HT:",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 151
+        }
+      },
+      {
+        "comment": "",
+        "key": "Remise:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 159
+        }
+      },
+      {
+        "comment": "",
+        "key": "-%@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 161
+        }
+      },
+      {
+        "comment": "",
+        "key": "Net HT:",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 168
+        }
+      },
+      {
+        "comment": "",
+        "key": "TVA:",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 175
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total TTC:",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 182
+        }
+      },
+      {
+        "comment": "",
+        "key": "Annuler",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 193
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enregistrer",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 199
+        }
+      }
+    ]
+  },
+  "version": 1
+}

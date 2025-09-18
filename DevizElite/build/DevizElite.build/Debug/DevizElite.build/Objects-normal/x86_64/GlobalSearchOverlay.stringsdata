@@ -1,0 +1,16 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/GlobalSearchOverlay.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Search…",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 30
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,216 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/CalculationsTab.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Calculs",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "🧮 Calculateur",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "Résumé",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "Par Corps d'État",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "Marges",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "Rentabilité",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "💰 Résumé Financier",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "📊 Répartition TVA",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 151
+        }
+      },
+      {
+        "comment": "",
+        "key": "TVA %@%%",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 155
+        }
+      },
+      {
+        "comment": "",
+        "key": "Base: %@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 160
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld ligne(s)",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 289
+        }
+      },
+      {
+        "comment": "",
+        "key": "Taux de marge",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 324
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@%%",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 326
+        }
+      },
+      {
+        "comment": "",
+        "key": "🎯 Marge Cible",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 346
+        }
+      },
+      {
+        "comment": "",
+        "key": "📋 Analyse par Ligne",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 363
+        }
+      },
+      {
+        "comment": "",
+        "key": "Appliquer à toutes les lignes",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 355
+        }
+      },
+      {
+        "comment": "",
+        "key": "Marge cible:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 349
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@%%",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 351
+        }
+      },
+      {
+        "comment": "",
+        "key": "Actuel:",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 450
+        }
+      },
+      {
+        "comment": "",
+        "key": "(%@%%)",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 452
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cible:",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 458
+        }
+      },
+      {
+        "comment": "",
+        "key": "(%@%%)",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 461
+        }
+      },
+      {
+        "comment": "",
+        "key": "📊 Indicateurs Clés",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 509
+        }
+      },
+      {
+        "comment": "",
+        "key": "🔧 Rentabilité par Corps d'État",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 686
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@%%",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 747
+        }
+      },
+      {
+        "comment": "",
+        "key": "💡 Recommandations",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 760
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -4,19 +4,54 @@ import PDFKit
 import CoreGraphics
 
 // MARK: - Professional PDF Generator - macOS Compatible
-// Exact layout and colors per user's BTP 2025 design, rendered via CoreGraphics in an NSView
+// Unified template system supporting construction-specific templates for France/Belgium
 
 final class ProfessionalPDFGenerator {
-    private let pageSize = CGSize(width: 595, height: 842) // A4 @ 72dpi
-    private let margin: CGFloat = 40
-    private let primaryBlue = NSColor(calibratedRed: 0.114, green: 0.471, blue: 0.843, alpha: 1.0) // #1D78D6
-    private let orangeColor = NSColor(calibratedRed: 1.0, green: 0.647, blue: 0.0, alpha: 1.0) // #FFA500
-    private let lightGray = NSColor(calibratedWhite: 0.96, alpha: 1.0)
-    private let lightBlue = NSColor(calibratedRed: 0.9, green: 0.95, blue: 1.0, alpha: 1.0)
-    private let greenColor = NSColor(calibratedRed: 0.133, green: 0.545, blue: 0.133, alpha: 1.0)
-
-    // Entry point: map Core Data Document to data models and render
+    
+    // Entry point: determine template type and generate PDF
     func generate(document: Document, isQuote: Bool) -> Data? {
+        // Get current template style from user defaults
+        let styleRaw = UserDefaults.standard.string(forKey: "templateStyle") ?? TemplateStyle.Classic.rawValue
+        let style = TemplateStyle(rawValue: styleRaw) ?? .Classic
+        
+        // Determine which template to use based on style and document type
+        switch (style, isQuote) {
+        // New Modern BTP templates (PRIMARY)
+        case (.ModernBTPInvoice, false):
+            return ModernBTPInvoiceTemplate().generate(document: document)
+        case (.ModernBTPQuote, true):
+            return ModernBTPQuoteTemplate().generate(document: document)
+        case (.BEModernBTPInvoice, false):
+            return BEModernBTPInvoiceTemplate().generate(document: document)
+        case (.BEModernBTPQuote, true):
+            return BEModernBTPQuoteTemplate().generate(document: document)
+            
+        // Legacy templates
+        case (.FRModernInvoice, false), (.BTP2025Invoice, false):
+            return FRConstructionInvoiceTemplate().generate(document: document)
+        case (.FRModernQuote, true), (.BTP2025Quote, true):
+            return FRConstructionQuoteTemplate().generate(document: document)
+        case (.BEProfessionalInvoice, false):
+            return BEConstructionInvoiceTemplate().generate(document: document)
+        case (.BEProfessionalQuote, true):
+            return BEConstructionQuoteTemplate().generate(document: document)
+            
+        default:
+            // Fallback to original BTP 2025 template for other styles
+            return generateBTP2025PDF(document: document, isQuote: isQuote)
+        }
+    }
+    
+    // Original BTP 2025 template (kept as fallback)
+    private func generateBTP2025PDF(document: Document, isQuote: Bool) -> Data? {
+        let pageSize = CGSize(width: 595, height: 842) // A4 @ 72dpi
+        let margin: CGFloat = 40
+        let primaryBlue = NSColor(calibratedRed: 0.114, green: 0.471, blue: 0.843, alpha: 1.0)
+        let orangeColor = NSColor(calibratedRed: 1.0, green: 0.647, blue: 0.0, alpha: 1.0)
+        let lightGray = NSColor(calibratedWhite: 0.96, alpha: 1.0)
+        let lightBlue = NSColor(calibratedRed: 0.9, green: 0.95, blue: 1.0, alpha: 1.0)
+        let greenColor = NSColor(calibratedRed: 0.133, green: 0.545, blue: 0.133, alpha: 1.0)
+
         let company = ProCompany(
             name: (UserDefaults.standard.string(forKey: "companyName") ?? "MettaConcept").trimmingCharacters(in: .whitespacesAndNewlines),
             address: (UserDefaults.standard.string(forKey: "companyAddress") ?? "").trimmingCharacters(in: .whitespacesAndNewlines),
@@ -32,7 +67,7 @@ final class ProfessionalPDFGenerator {
             type: isQuote ? .quote : .invoice,
             projectAddress: (document.value(forKey: "siteAddress") as? String) ?? "",
             projectType: (document.value(forKey: "projectName") as? String) ?? "",
-            vatRate: 0 // mixed rates handled per line; keep 0 for label in totals box
+            vatRate: 0
         )
 
         var cli: ProClient? = nil
@@ -58,16 +93,6 @@ final class ProfessionalPDFGenerator {
             )
         }
 
-        return generateInvoicePDF(invoice: inv, client: cli, company: company, items: items)
-    }
-
-    // MARK: - Render one-page PDF (A4). PDFService handles multipage slicing if needed
-    func generateInvoicePDF(
-        invoice: ProInvoice,
-        client: ProClient?,
-        company: ProCompany,
-        items: [ProInvoiceItem]
-    ) -> Data? {
         let view = ProPDFPageView(
             frame: CGRect(origin: .zero, size: pageSize),
             margin: margin,
@@ -76,13 +101,14 @@ final class ProfessionalPDFGenerator {
             lightGray: lightGray,
             lightBlue: lightBlue,
             greenColor: greenColor,
-            invoice: invoice,
-            client: client,
+            invoice: inv,
+            client: cli,
             company: company,
             items: items
         )
         return view.dataWithPDF(inside: view.bounds)
     }
+
 }
 
 // MARK: - NSView that draws the BTP 2025 page
@@ -150,7 +176,7 @@ private final class ProPDFPageView: NSView {
 
     // MARK: Sections
     private func drawHeader(ctx: CGContext, startY: CGFloat) -> CGFloat {
-        var y = startY
+        let y = startY
         let logoRect = CGRect(x: margin, y: y, width: 100, height: 60)
         // Rounded blue box
         let path = NSBezierPath(roundedRect: logoRect, xRadius: 8, yRadius: 8)
@@ -199,7 +225,7 @@ private final class ProPDFPageView: NSView {
     }
 
     private func drawEmetteurClientBoxes(ctx: CGContext, startY: CGFloat) -> CGFloat {
-        var y = startY
+        let y = startY
         let boxWidth = (bounds.width - margin * 2 - 20) / 2
         let boxHeight: CGFloat = 90
 
@@ -269,12 +295,17 @@ private final class ProPDFPageView: NSView {
         y += headerHeight
 
         let rowHeight: CGFloat = 45
-        let bodyHeight: CGFloat = items.isEmpty ? 150 : CGFloat(items.count) * rowHeight
+        // Reserve space at bottom for totals box + signatures + footer
+        let bottomReserve: CGFloat = 170
+        let maxBodyHeight = max(0, bounds.height - bottomReserve - y)
+        let desiredBodyHeight: CGFloat = items.isEmpty ? 150 : CGFloat(items.count) * rowHeight
+        let bodyHeight: CGFloat = min(desiredBodyHeight, maxBodyHeight)
         NSColor.white.setFill(); ctx.fill(CGRect(x: margin, y: y, width: tableWidth, height: bodyHeight))
 
         if !items.isEmpty {
             let itemAttrs: [NSAttributedString.Key: Any] = [ .font: NSFont.systemFont(ofSize: 10), .foregroundColor: NSColor.darkGray ]
-            for (idx, it) in items.enumerated() {
+            let rowsThatFit = Int(floor(bodyHeight / rowHeight))
+            for (idx, it) in items.prefix(rowsThatFit).enumerated() {
                 let rowY = y + CGFloat(idx) * rowHeight
                 if idx % 2 == 1 { lightGray.setFill(); ctx.fill(CGRect(x: margin, y: rowY, width: tableWidth, height: rowHeight)) }
                 let lotAttrs: [NSAttributedString.Key: Any] = [ .font: NSFont.boldSystemFont(ofSize: 9), .foregroundColor: primaryBlue ]
@@ -298,6 +329,9 @@ private final class ProPDFPageView: NSView {
         let total = subtotal + vat
 
         let yellowBoxHeight: CGFloat = vat > 0 ? 90 : 60
+        // Keep totals above reserved bottom area
+        let bottomReserve: CGFloat = 130
+        y = min(y, bounds.height - bottomReserve - yellowBoxHeight - 40)
         let yellowBox = CGRect(x: x, y: y, width: boxWidth, height: yellowBoxHeight)
         NSColor(calibratedRed: 1, green: 0.98, blue: 0.9, alpha: 1).setFill(); ctx.fill(yellowBox)
         NSColor(calibratedRed: 1, green: 0.9, blue: 0.7, alpha: 1).setStroke(); ctx.setLineWidth(1); ctx.stroke(yellowBox)
@@ -352,7 +386,10 @@ private final class ProPDFPageView: NSView {
     }
 
     private func drawSignatureAreas(ctx: CGContext, startY: CGFloat) -> CGFloat {
-        var y = startY
+        // Keep signatures safely above footer. If content is short, anchor to a fixed top
+        // relative to the bottom area to avoid overlapping footer pills/text.
+        let minTopFromBottom: CGFloat = bounds.height - 160
+        var y = max(startY, minTopFromBottom)
         let boxWidth = (bounds.width - margin * 2 - 40) / 2
         let boxHeight: CGFloat = 80
         let headerAttrs: [NSAttributedString.Key: Any] = [ .font: NSFont.boldSystemFont(ofSize: 12), .foregroundColor: NSColor.darkGray ]
@@ -381,7 +418,8 @@ private final class ProPDFPageView: NSView {
         let text = "\(company.name) — \(company.address)" as NSString
         let para = NSMutableParagraphStyle(); para.alignment = .center
         var attrs = footerAttrs; attrs[.paragraphStyle] = para
-        text.draw(in: CGRect(x: margin, y: footerY + 10, width: bounds.width - margin * 2, height: 20), withAttributes: attrs)
+        // Slightly lower to keep distance from signature lines
+        text.draw(in: CGRect(x: margin, y: footerY + 18, width: bounds.width - margin * 2, height: 20), withAttributes: attrs)
     }
 }
 

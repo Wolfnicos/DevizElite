@@ -37,8 +37,8 @@ struct TemplatesView: View {
             Divider()
             VStack(alignment: .leading, spacing: 12) {
                 Text(L10n.t("Preview")).font(.headline)
-                TemplateLivePreview()
-                    .frame(width: 595, height: 842)
+                TemplateLivePreviewNew()
+                    .frame(width: 400, height: 566)
                     .background(Color(NSColor.windowBackgroundColor))
                     .cornerRadius(8)
                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.gray.opacity(0.2)))
@@ -87,7 +87,7 @@ struct TemplatesView: View {
     }
 }
 
-enum TemplateStyle: String, CaseIterable { case Classic, Modern, Minimal, FRModernInvoice, BEProfessionalInvoice, FRModernQuote, BEProfessionalQuote, BTP2025Invoice, BTP2025Quote }
+enum TemplateStyle: String, CaseIterable { case Classic, Modern, Minimal, FRModernInvoice, BEProfessionalInvoice, FRModernQuote, BEProfessionalQuote, BTP2025Invoice, BTP2025Quote, ModernBTPInvoice, ModernBTPQuote, BEModernBTPInvoice, BEModernBTPQuote }
 
 private struct TemplatePreviewCard: View {
     let template: InvoiceTemplateModel
@@ -122,23 +122,45 @@ private struct TemplateLivePreview: View {
     private func sampleDocument() -> Document {
         let request = NSFetchRequest<Document>(entityName: "Document")
         request.fetchLimit = 1
-        if let existing = try? viewContext.fetch(request).first { return existing }
+        if let existing = try? viewContext.fetch(request).first { 
+            // Update existing with BTP data for preview
+            updateDocumentWithBTPData(existing)
+            return existing 
+        }
+        
         let d = Document(context: viewContext)
         d.id = UUID()
         d.type = "invoice"
-        d.number = "INV-PREVIEW"
+        d.number = "PREV-2024-001"
         d.issueDate = Date()
+        d.dueDate = Calendar.current.date(byAdding: .day, value: 30, to: Date())
         d.currencyCode = "EUR"
         d.status = "draft"
-        d.subtotal = 0
-        d.taxTotal = 0
-        d.total = 0
-        // Add a sample client
+        
+        // Add BTP-specific data
+        updateDocumentWithBTPData(d)
+        
+        // Add a sample client with BTP data
         let c = Client(context: viewContext)
-        c.id = UUID(); c.name = "Chantier SARL"; c.address = "12 Rue de Paris, FR"
+        c.id = UUID()
+        c.name = "Entreprise Martin SARL"
+        c.address = "15 Avenue des Champs\n75008 Paris\nFrance"
+        c.contactEmail = "contact@martin-btp.fr"
+        c.phone = "+33 1 42 86 33 22"
+        c.taxId = "FR85123456789"
         d.client = c
-        // Sample line items
-        for (idx, row) in [("Masonry work", 10.0, "m²", 25.0, 10.0, 0.0), ("Painting work", 80.0, "m²", 6.0, 20.0, 5.0)].enumerated() {
+        
+        // Sample BTP line items with corps d'état
+        let btpItems = [
+            ("Terrassement fondations", 45.0, "m³", 35.0, 10.0, 0.0, "terrassement"),
+            ("Maçonnerie murs porteurs", 120.0, "m²", 85.0, 20.0, 5.0, "maconnerie"),
+            ("Charpente traditionnelle", 1.0, "forfait", 4500.0, 20.0, 0.0, "charpente"),
+            ("Couverture tuiles", 95.0, "m²", 45.0, 20.0, 0.0, "couverture"),
+            ("Plomberie sanitaire", 8.0, "poste", 350.0, 20.0, 10.0, "plomberie"),
+            ("Électricité complète", 12.0, "circuit", 280.0, 20.0, 0.0, "electricite")
+        ]
+        
+        for (idx, row) in btpItems.enumerated() {
             let li = LineItem(context: viewContext)
             li.id = UUID()
             li.itemDescription = row.0
@@ -149,10 +171,24 @@ private struct TemplateLivePreview: View {
             li.discount = row.5
             li.position = Int16(idx)
             li.document = d
+            
+            // Add BTP corps d'état
+            if let corpsEtat = CorpsEtat(rawValue: row.6.capitalized) {
+                li.setValue(corpsEtat.rawValue, forKey: "btpCorpsEtat")
+            }
+            if let uniteBTP = UniteBTP(rawValue: row.2) {
+                li.setValue(uniteBTP.rawValue, forKey: "btpUnite")
+            }
         }
-        d.subtotal = 0; d.taxTotal = 0; d.total = 0
+        
         try? viewContext.save()
         return d
+    }
+    
+    private func updateDocumentWithBTPData(_ document: Document) {
+        // Use safe BTP extensions instead of setValue
+        document.siteAddress = "123 Rue du Chantier, 75012 Paris"
+        document.setValue("Construction maison individuelle", forKey: "projectName")
     }
 }
 

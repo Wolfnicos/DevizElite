@@ -43,20 +43,24 @@ struct EstimatesListView: View {
             EstimateStatsView(estimates: Array(estimates))
             
             List {
-                ForEach(filteredEstimates) { estimate in
-                    EstimateRow(
+                ForEach(filteredEstimates, id: \.id) { estimate in
+                    SwipeableEstimateRow(
                         estimate: estimate,
                         onEdit: { selectedEstimate = $0 },
-                        onDelete: { deleteEstimate($0) },
+                        onDelete: { 
+                            print("🗑️ DELETE ESTIMATE: \(estimate.number ?? "N/A")")
+                            deleteEstimate($0) 
+                        },
                         onConvertToInvoice: { convertToInvoice($0) }
                     )
-                    .listRowInsets(EdgeInsets())
-                    .padding(.vertical, DesignSystem.Spacing.sm)
-                    .padding(.horizontal, DesignSystem.Spacing.md)
                 }
-                .onDelete(perform: deleteEstimates) // SWIPE TO DELETE
+                .onDelete { indexSet in
+                    print("🔄 SWIPE DELETE triggered for indices: \(indexSet)")
+                    deleteEstimates(at: indexSet)
+                }
             }
-            .listStyle(PlainListStyle())
+            .listStyle(.plain)
+            .scrollContentBackground(.hidden)
             .background(DesignSystem.Colors.background)
         }
         .background(DesignSystem.Colors.background)
@@ -98,17 +102,30 @@ struct EstimatesListView: View {
     
     // MARK: - Swipe to delete functionality
     private func deleteEstimates(at offsets: IndexSet) {
-        withAnimation {
+        print("🔄 deleteEstimates called with offsets: \(offsets)")
+        
+        guard !offsets.isEmpty else {
+            print("⚠️ No offsets provided")
+            return
+        }
+        
+        withAnimation(.easeInOut(duration: 0.3)) {
             for index in offsets {
+                guard index < filteredEstimates.count else {
+                    print("⚠️ Index \(index) out of bounds")
+                    continue
+                }
                 let estimate = filteredEstimates[index]
+                print("🗑️ Suppression du devis: \(estimate.number ?? "N/A")")
                 viewContext.delete(estimate)
             }
             
             do {
                 try viewContext.save()
-                print("✅ Devis supprimés avec succès")
+                print("✅ \(offsets.count) devis supprimé(s) avec succès")
             } catch {
                 print("❌ Erreur lors de la suppression: \(error)")
+                viewContext.rollback()
             }
         }
     }
@@ -247,11 +264,15 @@ private struct EstimateHeaderView: View {
             } label: {
                 HStack {
                     Image(systemName: "doc.badge.gearshape")
+                        .font(.system(size: 14, weight: .medium))
                     Text("Nouveau Devis BTP")
+                        .font(.system(size: 14, weight: .medium))
                 }
+                .padding(.horizontal, 4)
             }
             .buttonStyle(.borderedProminent)
-            .accentColor(.orange) // Orange pour les devis
+            .tint(.orange) // Orange pour les devis
+            .controlSize(.large)
             .sheet(isPresented: $showTemplateSelector) {
                 TemplateSelector(
                     isPresented: $showTemplateSelector,
@@ -406,9 +427,10 @@ private struct EstimateRow: View {
                 .padding(.leading)
         }
         .contentShape(Rectangle())
-        .onTapGesture {
-            onEdit(estimate)
-        }
+        .gesture(
+            TapGesture()
+                .onEnded { onEdit(estimate) }
+        )
         .contextMenu {
             Button { onEdit(estimate) } label: { 
                 Label(L10n.t("Modifier"), systemImage: "pencil") 
@@ -480,5 +502,214 @@ private struct EstimateRow: View {
             return client.name ?? L10n.t("Pas de client")
         }
         return L10n.t("Pas de client")
+    }
+}
+
+// MARK: - Swipeable Estimate Row with Manual Swipe Detection
+struct SwipeableEstimateRow: View {
+    @EnvironmentObject private var i18n: LocalizationService
+    let estimate: Document
+    let onEdit: (Document) -> Void
+    let onDelete: (Document) -> Void
+    let onConvertToInvoice: (Document) -> Void
+    
+    @State private var showDeleteConfirm = false
+    @State private var showConvertConfirm = false
+    @State private var dragOffset: CGFloat = 0
+    @State private var showingActions = false
+    
+    var body: some View {
+        ZStack {
+            // Background Delete Action
+            HStack {
+                Spacer()
+                Button(action: { 
+                    print("🔥 MANUAL DELETE BUTTON PRESSED")
+                    showDeleteConfirm = true 
+                }) {
+                    VStack {
+                        Image(systemName: "trash.fill")
+                            .foregroundColor(.white)
+                            .font(.title2)
+                        Text("Supprimer")
+                            .foregroundColor(.white)
+                            .font(.caption)
+                    }
+                }
+                .frame(width: 80)
+                .frame(maxHeight: .infinity)
+                .background(Color.red)
+                .opacity(showingActions ? 1.0 : 0.0)
+            }
+            
+            // Main Content
+            HStack {
+                // Icône DEVIS
+                Image(systemName: "doc.text")
+                    .foregroundColor(.orange)
+                    .font(.title2)
+                    .frame(width: 30)
+                
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text(estimate.number ?? "N/A")
+                            .font(DesignSystem.Typography.headline)
+                        
+                        // Badge DEVIS
+                        Text("DEVIS")
+                            .font(.caption2)
+                            .fontWeight(.bold)
+                            .padding(.horizontal, 6)
+                            .padding(.vertical, 2)
+                            .background(Color.orange)
+                            .foregroundColor(.white)
+                            .cornerRadius(4)
+                    }
+                    
+                    Text(getClientName(estimate))
+                        .font(DesignSystem.Typography.callout)
+                        .foregroundColor(DesignSystem.Colors.textSecondary)
+                    
+                    // Validité du devis
+                    if let issueDate = estimate.issueDate {
+                        let validUntil = Calendar.current.date(byAdding: .day, value: 30, to: issueDate) ?? issueDate
+                        Text("Valide jusqu'au \(validUntil, style: .date)")
+                            .font(.caption)
+                            .foregroundColor(isExpired(validUntil) ? .red : .orange)
+                    }
+                }
+                
+                Spacer()
+                
+                VStack(alignment: .trailing) {
+                    Text(formatCurrency(estimate.total?.doubleValue ?? 0))
+                        .font(DesignSystem.Typography.headline)
+                    Text(estimate.issueDate ?? Date(), style: .date)
+                        .font(DesignSystem.Typography.callout)
+                        .foregroundColor(DesignSystem.Colors.textSecondary)
+                }
+                
+                statusBadge(estimate: estimate)
+                    .padding(.leading)
+            }
+            .padding()
+            .background(Color(.controlBackgroundColor))
+            .cornerRadius(8)
+            .offset(x: dragOffset)
+            .gesture(
+                DragGesture()
+                    .onChanged { value in
+                        print("📱 DRAG DETECTED: \(value.translation.width)")
+                        if value.translation.width < 0 { // Swipe left
+                            dragOffset = max(value.translation.width, -100)
+                            showingActions = dragOffset < -30
+                        }
+                    }
+                    .onEnded { value in
+                        print("📱 DRAG ENDED: \(value.translation.width)")
+                        withAnimation(.spring()) {
+                            if value.translation.width < -50 {
+                                dragOffset = -80
+                                showingActions = true
+                            } else {
+                                dragOffset = 0
+                                showingActions = false
+                            }
+                        }
+                    }
+            )
+            .onTapGesture {
+                if showingActions {
+                    withAnimation(.spring()) {
+                        dragOffset = 0
+                        showingActions = false
+                    }
+                } else {
+                    onEdit(estimate)
+                }
+            }
+        }
+        .clipped()
+        .contextMenu {
+            Button { onEdit(estimate) } label: { 
+                Label(L10n.t("Modifier"), systemImage: "pencil") 
+            }
+            
+            if estimate.status != "accepted" {
+                Button { showConvertConfirm = true } label: { 
+                    Label(L10n.t("Convertir en facture"), systemImage: "arrow.right.doc.on.clipboard") 
+                }
+            }
+            
+            Button(role: .destructive) { showDeleteConfirm = true } label: { 
+                Label(L10n.t("Supprimer"), systemImage: "trash") 
+            }
+        }
+        .alert(L10n.t("Supprimer le devis?"), isPresented: $showDeleteConfirm) {
+            Button(L10n.t("Annuler"), role: .cancel) {}
+            Button(L10n.t("Supprimer"), role: .destructive) { 
+                print("✅ CONFIRMED DELETE")
+                onDelete(estimate) 
+            }
+        } message: {
+            Text(L10n.t("Êtes-vous sûr de vouloir supprimer le devis \(estimate.number ?? "")?"))
+        }
+        .alert(L10n.t("Convertir en facture?"), isPresented: $showConvertConfirm) {
+            Button(L10n.t("Annuler"), role: .cancel) {}
+            Button(L10n.t("Convertir")) { onConvertToInvoice(estimate) }
+        } message: {
+            Text(L10n.t("Cela créera une nouvelle facture basée sur ce devis."))
+        }
+    }
+    
+    private func statusBadge(estimate: Document) -> some View {
+        Text(statusDisplayName(estimate: estimate))
+            .font(.caption)
+            .fontWeight(.medium)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 5)
+            .background(statusColor(estimate: estimate).opacity(0.2))
+            .foregroundColor(statusColor(estimate: estimate))
+            .cornerRadius(10)
+    }
+    
+    private func statusDisplayName(estimate: Document) -> String {
+        switch estimate.status?.lowercased() {
+        case "draft": return "Brouillon"
+        case "sent": return "Envoyé"
+        case "accepted": return "Accepté"
+        case "rejected": return "Refusé"
+        case "expired": return "Expiré"
+        default: return estimate.status?.capitalized ?? "N/A"
+        }
+    }
+    
+    private func statusColor(estimate: Document) -> Color {
+        switch estimate.status?.lowercased() {
+        case "accepted": return .green
+        case "sent": return .blue
+        case "rejected": return .red
+        case "expired": return .red
+        case "draft": return .gray
+        default: return .orange
+        }
+    }
+    
+    private func isExpired(_ date: Date) -> Bool {
+        date < Date()
+    }
+    
+    private func getClientName(_ estimate: Document) -> String {
+        if let client = estimate.safeClient {
+            return client.name ?? L10n.t("Pas de client")
+        }
+        return L10n.t("Pas de client")
+    }
+    
+    private func formatCurrency(_ amount: Double) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.currencyCode = "EUR"
+        return formatter.string(from: NSNumber(value: amount)) ?? "0 €"
     }
 }

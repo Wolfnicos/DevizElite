@@ -1,0 +1,728 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Services/PDFService.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "VAT: %@",
+        "location": {
+          "startingColumn": 66,
+          "startingLine": 242
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notes",
+        "location": {
+          "startingColumn": 77,
+          "startingLine": 391
+        }
+      },
+      {
+        "comment": "",
+        "key": "ÉMETTEUR",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 369
+        }
+      },
+      {
+        "comment": "",
+        "key": "TVA: %@",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 373
+        }
+      },
+      {
+        "comment": "",
+        "key": "IBAN: %@",
+        "location": {
+          "startingColumn": 71,
+          "startingLine": 374
+        }
+      },
+      {
+        "comment": "",
+        "key": "CLIENT",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 379
+        }
+      },
+      {
+        "comment": "",
+        "key": "TVA 6% applicable sous conditions pour rénovations (>10 ans).",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 424
+        }
+      },
+      {
+        "comment": "",
+        "key": "DEVIS",
+        "location": {
+          "startingColumn": 56,
+          "startingLine": 403
+        }
+      },
+      {
+        "comment": "",
+        "key": "FACTURE",
+        "location": {
+          "startingColumn": 66,
+          "startingLine": 403
+        }
+      },
+      {
+        "comment": "",
+        "key": "N°",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 404
+        }
+      },
+      {
+        "comment": "",
+        "key": "IBAN: %@",
+        "location": {
+          "startingColumn": 71,
+          "startingLine": 411
+        }
+      },
+      {
+        "comment": "",
+        "key": "Banque: %@",
+        "location": {
+          "startingColumn": 75,
+          "startingLine": 412
+        }
+      },
+      {
+        "comment": "",
+        "key": "TVA: %@",
+        "location": {
+          "startingColumn": 70,
+          "startingLine": 413
+        }
+      },
+      {
+        "comment": "",
+        "key": "Projet / Chantier: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 468
+        }
+      },
+      {
+        "comment": "",
+        "key": "Adresse du chantier: %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 471
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pénalités de retard et indemnité forfaitaire selon la législation en vigueur.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 484
+        }
+      },
+      {
+        "comment": "",
+        "key": "Prix en EUR. TVA selon législation. Planning et conditions détaillées sur demande.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 486
+        }
+      },
+      {
+        "comment": "",
+        "key": "Conditions de paiement: %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 475
+        }
+      },
+      {
+        "comment": "",
+        "key": "Validité de l'offre: %d jours",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 478
+        }
+      },
+      {
+        "comment": "",
+        "key": "TVA Intra: %@",
+        "location": {
+          "startingColumn": 78,
+          "startingLine": 533
+        }
+      },
+      {
+        "comment": "",
+        "key": "N° %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 540
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date : %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 541
+        }
+      },
+      {
+        "comment": "",
+        "key": "Validité : %d jours",
+        "location": {
+          "startingColumn": 99,
+          "startingLine": 543
+        }
+      },
+      {
+        "comment": "",
+        "key": "Échéance : %@",
+        "location": {
+          "startingColumn": 62,
+          "startingLine": 545
+        }
+      },
+      {
+        "comment": "",
+        "key": "DEVIS",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 539
+        }
+      },
+      {
+        "comment": "",
+        "key": "FACTURE",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 539
+        }
+      },
+      {
+        "comment": "",
+        "key": "Émetteur",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 563
+        }
+      },
+      {
+        "comment": "",
+        "key": "IBAN: %@",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 570
+        }
+      },
+      {
+        "comment": "",
+        "key": "Client",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 575
+        }
+      },
+      {
+        "comment": "",
+        "key": "🏗️",
+        "location": {
+          "startingColumn": 113,
+          "startingLine": 597
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ :",
+        "location": {
+          "startingColumn": 90,
+          "startingLine": 610
+        }
+      },
+      {
+        "comment": "",
+        "key": "Unité",
+        "location": {
+          "startingColumn": 10,
+          "startingLine": 615
+        }
+      },
+      {
+        "comment": "",
+        "key": "Quantité",
+        "location": {
+          "startingColumn": 10,
+          "startingLine": 616
+        }
+      },
+      {
+        "comment": "",
+        "key": "P.U. HT (€)",
+        "location": {
+          "startingColumn": 10,
+          "startingLine": 617
+        }
+      },
+      {
+        "comment": "",
+        "key": "TVA",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 618
+        }
+      },
+      {
+        "comment": "",
+        "key": "Montant TTC (€)",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 620
+        }
+      },
+      {
+        "comment": "",
+        "key": "Description des travaux",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 614
+        }
+      },
+      {
+        "comment": "",
+        "key": "Désignation des travaux",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 614
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total HT (€)",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 619
+        }
+      },
+      {
+        "comment": "",
+        "key": "Montant HT (€)",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 619
+        }
+      },
+      {
+        "comment": "",
+        "key": "TOTAL TTC :",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 715
+        }
+      },
+      {
+        "comment": "",
+        "key": "Observations",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 729
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Travaux réalisés selon DTU en vigueur",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 734
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Garantie décennale en cours de validité",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 735
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Matériaux conformes aux normes CE",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 736
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Nettoyage de fin de chantier inclus",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 737
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Photos avant/après disponibles sur demande",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 738
+        }
+      },
+      {
+        "comment": "",
+        "key": "Modalités de règlement",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 753
+        }
+      },
+      {
+        "comment": "",
+        "key": "📅",
+        "location": {
+          "startingColumn": 76,
+          "startingLine": 755
+        }
+      },
+      {
+        "comment": "",
+        "key": "Échéance : %@",
+        "location": {
+          "startingColumn": 90,
+          "startingLine": 755
+        }
+      },
+      {
+        "comment": "",
+        "key": "🏦",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 757
+        }
+      },
+      {
+        "comment": "",
+        "key": "IBAN : %@",
+        "location": {
+          "startingColumn": 77,
+          "startingLine": 757
+        }
+      },
+      {
+        "comment": "",
+        "key": "⚠️",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 758
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pénalités de retard : 3 × taux légal • Indemnité forfaitaire : 40 €",
+        "location": {
+          "startingColumn": 60,
+          "startingLine": 758
+        }
+      },
+      {
+        "comment": "",
+        "key": "Mentions légales et conditions générales",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 771
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Travaux réalisés conformément aux règles de l'art et DTU",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 773
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Garantie de parfait achèvement : 1 an",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 774
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Garantie biennale : 2 ans (équipements)",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 775
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Garantie décennale : 10 ans (gros œuvre)",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 776
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Escompte pour paiement anticipé : néant",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 777
+        }
+      },
+      {
+        "comment": "",
+        "key": "• En cas de retard : application article L441-10 C.Com",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 778
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Réserve de propriété jusqu'au paiement intégral",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 779
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Tribunal compétent : Tribunal de Commerce",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 780
+        }
+      },
+      {
+        "comment": "",
+        "key": "+ Options supplémentaires (non incluses)",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 839
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Pompe à chaleur air/eau Atlantic 11kW    8 500,00 € HT",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 841
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Portail aluminium motorisé 4m           3 200,00 € HT",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 842
+        }
+      },
+      {
+        "comment": "",
+        "key": "• Pergola bioclimatique 20m²              12 000,00 € HT",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 843
+        }
+      },
+      {
+        "comment": "",
+        "key": "Planning prévisionnel",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 855
+        }
+      },
+      {
+        "comment": "",
+        "key": "Semaines 1-4 : Gros œuvre",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 858
+        }
+      },
+      {
+        "comment": "",
+        "key": "Semaines 5-8 : Charpente, couverture",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 859
+        }
+      },
+      {
+        "comment": "",
+        "key": "Semaines 9-11 : Second œuvre",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 860
+        }
+      },
+      {
+        "comment": "",
+        "key": "Semaines 12 : Finitions, réception",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 861
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sous réserve conditions météo et autorisations",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 863
+        }
+      },
+      {
+        "comment": "",
+        "key": "Conditions de réalisation",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 875
+        }
+      },
+      {
+        "comment": "",
+        "key": "1  Acompte signature : 30%",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 878
+        }
+      },
+      {
+        "comment": "",
+        "key": "3  Mi-parcours : 25%",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 879
+        }
+      },
+      {
+        "comment": "",
+        "key": "2  Début travaux : 35%",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 882
+        }
+      },
+      {
+        "comment": "",
+        "key": "4  Réception : 10%",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 883
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nos garanties et engagements",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 896
+        }
+      },
+      {
+        "comment": "",
+        "key": "✓ Garantie décennale tous corps d'état",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 899
+        }
+      },
+      {
+        "comment": "",
+        "key": "✓ Respect des délais contractuels",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 900
+        }
+      },
+      {
+        "comment": "",
+        "key": "✓ Conducteur de travaux dédié",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 901
+        }
+      },
+      {
+        "comment": "",
+        "key": "✓ Assurance dommages-ouvrage proposée",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 904
+        }
+      },
+      {
+        "comment": "",
+        "key": "✓ Certification RGE (aides fiscales possibles)",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 905
+        }
+      },
+      {
+        "comment": "",
+        "key": "✓ Nettoyage quotidien du chantier",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 906
+        }
+      },
+      {
+        "comment": "",
+        "key": "Le Client",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 919
+        }
+      },
+      {
+        "comment": "",
+        "key": "Précédé de 'Bon pour accord'\nDate et signature",
+        "location": {
+          "startingColumn": 111,
+          "startingLine": 919
+        }
+      },
+      {
+        "comment": "",
+        "key": "L'Entreprise",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 920
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cachet entreprise",
+        "location": {
+          "startingColumn": 114,
+          "startingLine": 920
+        }
+      },
+      {
+        "comment": "",
+        "key": "Validité du devis : 30 jours",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 929
+        }
+      }
+    ]
+  },
+  "version": 1
+}

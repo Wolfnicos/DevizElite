@@ -1,0 +1,160 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Catalog/CatalogSelectionView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Catalogue BTP",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "Annuler",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "Rechercher un produit...",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 74
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld produits",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 87
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld sélectionnés",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 94
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tout désélectionner",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 169
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld article(s) sélectionné(s)",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 158
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total estimé: %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 162
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ajouter au document",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 179
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 255
+        }
+      },
+      {
+        "comment": "",
+        "key": "HT",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 343
+        }
+      },
+      {
+        "comment": "",
+        "key": "TVA %lld%%",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 347
+        }
+      },
+      {
+        "comment": "",
+        "key": "Filtres",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 440
+        }
+      },
+      {
+        "comment": "",
+        "key": "Filtrer par prix",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 397
+        }
+      },
+      {
+        "comment": "",
+        "key": "Réinitialiser",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 428
+        }
+      },
+      {
+        "comment": "",
+        "key": "Appliquer",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 434
+        }
+      },
+      {
+        "comment": "",
+        "key": "Prix minimum (HT)",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 401
+        }
+      },
+      {
+        "comment": "",
+        "key": "Prix maximum (HT)",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 414
+        }
+      },
+      {
+        "comment": "",
+        "key": "Fermer",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 443
+        }
+      }
+    ]
+  },
+  "version": 1
+}

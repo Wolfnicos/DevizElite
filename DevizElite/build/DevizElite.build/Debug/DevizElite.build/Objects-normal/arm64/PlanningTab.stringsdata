@@ -1,0 +1,152 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Editor/PlanningTab.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Vue",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "📝 Ajouter Phase",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timeline",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "Calendrier",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "Diagramme",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "Planning du Projet",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 173
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld jours",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 189
+        }
+      },
+      {
+        "comment": "",
+        "key": "Durée prévue",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 194
+        }
+      },
+      {
+        "comment": "",
+        "key": "Avancement: %lld%%",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 203
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sélectionner une date",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 300
+        }
+      },
+      {
+        "comment": "",
+        "key": "Activités du %@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 315
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tâches",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 479
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nouvelle Phase",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 574
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nom de la phase",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 564
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date de début",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 567
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date de fin",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 569
+        }
+      },
+      {
+        "comment": "",
+        "key": "Annuler",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 577
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ajouter",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 583
+        }
+      }
+    ]
+  },
+  "version": 1
+}

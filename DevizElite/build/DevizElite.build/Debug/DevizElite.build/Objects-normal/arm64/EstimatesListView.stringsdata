@@ -1,0 +1,56 @@
+{
+  "source": "/Users/lupudragos/Desktop/DevizElite/DevizElite/DevizElite/Views/Estimates/EstimatesListView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Nouveau Devis BTP",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 268
+        }
+      },
+      {
+        "comment": "",
+        "key": "Valide jusqu'au %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 410
+        }
+      },
+      {
+        "comment": "",
+        "key": "DEVIS",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 393
+        }
+      },
+      {
+        "comment": "",
+        "key": "Supprimer",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 534
+        }
+      },
+      {
+        "comment": "",
+        "key": "Valide jusqu'au %@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 576
+        }
+      },
+      {
+        "comment": "",
+        "key": "DEVIS",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 559
+        }
+      }
+    ]
+  },
+  "version": 1
+}
